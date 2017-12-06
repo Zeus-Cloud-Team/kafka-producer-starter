@@ -1,0 +1,1245 @@
+2017-12-06 17:08:20.232 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -1 for sending metadata request
+2017-12-06 17:08:20.232 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -1 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9092.
+2017-12-06 17:08:20.234 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.234 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.234 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:20.234 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:20.236 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.236 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.260 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -1
+2017-12-06 17:08:20.261 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -1
+2017-12-06 17:08:20.262 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:20.262 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:20.295 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.296 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.296 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -1 disconnected.
+2017-12-06 17:08:20.299 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.299 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.300 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:20.339 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:20.339 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:20.340 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.340 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.367 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:20.367 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:20.401 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.401 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.401 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+2017-12-06 17:08:20.444 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:20.445 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:20.446 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.446 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.447 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -1 for sending metadata request
+2017-12-06 17:08:20.447 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -1 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9092.
+2017-12-06 17:08:20.448 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.448 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.471 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:20.471 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:20.472 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -1
+2017-12-06 17:08:20.472 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -1
+2017-12-06 17:08:20.504 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.505 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.505 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:20.508 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.508 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.509 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -1 disconnected.
+2017-12-06 17:08:20.552 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:20.552 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:20.553 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.553 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.577 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:20.578 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:20.611 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.612 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.612 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+2017-12-06 17:08:20.659 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:20.659 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:20.660 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.660 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.686 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:20.686 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:20.721 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.723 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.723 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:20.763 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:20.763 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:20.764 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.765 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.766 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -1 for sending metadata request
+2017-12-06 17:08:20.766 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -1 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9092.
+2017-12-06 17:08:20.767 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.768 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.790 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:20.790 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:20.791 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -1
+2017-12-06 17:08:20.791 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -1
+2017-12-06 17:08:20.827 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.828 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.832 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+2017-12-06 17:08:20.833 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.833 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.834 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -1 disconnected.
+2017-12-06 17:08:20.869 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:20.869 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:20.871 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.872 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.894 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:20.894 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:20.924 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:20.925 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:20.925 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:20.976 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:20.976 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:20.977 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.978 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.978 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:20.978 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:20.980 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.981 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:20.982 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -1 for sending metadata request
+2017-12-06 17:08:20.982 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -1 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9092.
+2017-12-06 17:08:20.984 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:20.984 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:21.002 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:21.003 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:21.003 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:21.003 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:21.007 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -1
+2017-12-06 17:08:21.007 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -1
+2017-12-06 17:08:21.037 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.037 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.046 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:21.047 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.048 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.048 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.049 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.049 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+2017-12-06 17:08:21.049 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -1 disconnected.
+2017-12-06 17:08:21.088 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Give up sending metadata request since no node is available
+2017-12-06 17:08:21.193 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:21.193 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:21.195 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:21.195 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:21.195 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -1 for sending metadata request
+2017-12-06 17:08:21.195 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -1 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9092.
+2017-12-06 17:08:21.196 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:21.196 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:21.219 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:21.220 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:21.221 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -1
+2017-12-06 17:08:21.221 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -1
+2017-12-06 17:08:21.254 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.255 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.258 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+2017-12-06 17:08:21.259 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.259 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.259 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -1 disconnected.
+2017-12-06 17:08:21.298 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -2 for sending metadata request
+2017-12-06 17:08:21.298 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -2 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9093.
+2017-12-06 17:08:21.299 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:21.300 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:21.327 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -2
+2017-12-06 17:08:21.327 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -2
+2017-12-06 17:08:21.359 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.360 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.360 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -2 disconnected.
+2017-12-06 17:08:21.402 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initialize connection to node -3 for sending metadata request
+2017-12-06 17:08:21.402 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Initiating connection to node -3 at r0.kafka.rbc-hackathon.aws.confluent.cloud:9094.
+2017-12-06 17:08:21.403 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Set SASL client state to SEND_HANDSHAKE_REQUEST
+2017-12-06 17:08:21.403 DEBUG 60246 --- [book-2014.local] o.a.k.c.s.a.SaslClientAuthenticator      : Creating SaslClient: client=null;service=kafka;serviceHostname=r0.kafka.rbc-hackathon.aws.confluent.cloud;mechs=[PLAIN]
+2017-12-06 17:08:21.427 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Created socket with SO_RCVBUF = 33304, SO_SNDBUF = 131768, SO_TIMEOUT = 0 to node -3
+2017-12-06 17:08:21.428 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Completed connection to node -3
+2017-12-06 17:08:21.460 DEBUG 60246 --- [book-2014.local] o.a.k.common.network.SslTransportLayer   : SSLEngine.closeInBound() raised an exception.
+
+javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack?
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1646) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1614) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:1541) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeFailure(SslTransportLayer.java:724) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:314) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-12-06 17:08:21.460 DEBUG 60246 --- [book-2014.local] o.apache.kafka.common.network.Selector   : Connection with r0.kafka.rbc-hackathon.aws.confluent.cloud/54.209.44.163 disconnected
+
+javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1375) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:529) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.writeAppRecord(SSLEngineImpl.java:1194) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.wrap(SSLEngineImpl.java:1166) ~[na:1.8.0_25]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:469) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeWrap(SslTransportLayer.java:378) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:243) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.prepare(KafkaChannel.java:62) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:338) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:291) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:236) [kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:135) [kafka-clients-0.10.1.1.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: javax.net.ssl.SSLHandshakeException: General SSLEngine problem
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_25]
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1708) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:303) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:295) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1471) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:936) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:876) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:873) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1313) ~[na:1.8.0_25]
+	at org.apache.kafka.common.network.SslTransportLayer.runDelegatedTasks(SslTransportLayer.java:336) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshakeUnwrap(SslTransportLayer.java:414) ~[kafka-clients-0.10.1.1.jar:na]
+	at org.apache.kafka.common.network.SslTransportLayer.handshake(SslTransportLayer.java:270) ~[kafka-clients-0.10.1.1.jar:na]
+	... 7 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:230) ~[na:1.8.0_25]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:281) ~[na:1.8.0_25]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:136) ~[na:1.8.0_25]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1458) ~[na:1.8.0_25]
+	... 16 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_25]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_25]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_25]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_25]
+	... 22 common frames omitted
+
+2017-12-06 17:08:21.461 DEBUG 60246 --- [book-2014.local] org.apache.kafka.clients.NetworkClient   : Node -3 disconnected.
+Disconnected from the target VM, address: '127.0.0.1:62364', transport: 'socket'
+
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)
