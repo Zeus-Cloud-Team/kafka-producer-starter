@@ -30,7 +30,7 @@ public class KafkaProducer {
         while (true) {
             String key=getUniqueKey();
             String value=getValue();
-            logger.info("About to publish");
+            logger.info("About to publish key / value = {} / {} ", key, value);
             ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>("lojo-test-topic-1",key,value);
             producer.send(producerRecord);
             logger.info("Published!  Wait 2 seconds the proceed to next iteration");
