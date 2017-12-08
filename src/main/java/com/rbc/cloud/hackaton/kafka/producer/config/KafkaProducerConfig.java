@@ -33,8 +33,12 @@ public class KafkaProducerConfig {
     private ResourceLoader resourceLoader;
 
     private Boolean exists(String propertyName) {
-        String val=env.getProperty(propertyName);
-        return val != null && !val.equals("");
+        try {
+            String val = env.getProperty(propertyName);
+            return val != null && !val.equals("");
+        } catch(Exception e) {
+            return false;
+        }
     }
 
 
@@ -55,7 +59,16 @@ public class KafkaProducerConfig {
         if (Util.checkJavaVersion(new JavaVersion(javaVersion), new JavaVersion("1.8.0_101"))) {
             logger.info("Java version is fine!");
         } else {
-            logger.info("Incompatible Java version! Please upgrade java to be at least 1.8.0_101");
+            logger.error("Incompatible Java version! Please upgrade java to be at least 1.8.0_101");
+            System.exit(1);
+        }
+
+        String writableDir=null;
+        if (exists("writable.dir") && new File(env.getProperty("writable.dir")).canWrite()) {
+            writableDir=env.getProperty("writable.dir");
+        }
+        else  {
+            logger.error("Please provide a dir path in application property writable.dir that can be written to");
             System.exit(1);
         }
 
@@ -83,9 +96,6 @@ public class KafkaProducerConfig {
         props.put("sasl.jaas.config", env.getProperty("sasl.jaas.config") );
         props.put("sasl.mechanism", env.getProperty("sasl.mechanism") );
         props.put("security.protocol", env.getProperty("security.protocol") );
-
-//        String jaasFile=env.getProperty("jaas.file");
-//        logger.info(jaasFile);
 
         System.setProperty("java.security.auth.login.config",resourceLoader.getResource("file:/"+jaasFile).getURI().toString() );
 
