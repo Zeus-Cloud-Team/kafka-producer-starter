@@ -41,8 +41,6 @@ public class KafkaProducerConfig {
         }
     }
 
-
-
     @Bean
     Producer<String,String> producer() throws IOException {
         final Properties props = new Properties();
@@ -50,17 +48,23 @@ public class KafkaProducerConfig {
         if (exists("kafka.username") && exists("kafka.password")) {
             logger.info("Found credentials");
         } else {
-            logger.error("either kafka.username or kafka.password is not set, please set both and rerun");
-            System.exit(1);
+            String message="either kafka.username or kafka.password is not set, please set both and rerun";
+            logger.error(message);
+            throw new RuntimeException(message);
         }
 
         String javaVersion=System.getProperty("java.version");
         logger.info("Java version {}, minimum required is 1.8.0_101", javaVersion);
-        if (Util.checkJavaVersion(new JavaVersion(javaVersion), new JavaVersion("1.8.0_101"))) {
+
+        JavaVersion myJavaVersion=new JavaVersion(javaVersion);
+        JavaVersion minimumJavaVersion=new JavaVersion("1.8.0_101");
+
+        if (myJavaVersion.greaterThan(minimumJavaVersion)) {
             logger.info("Java version is fine!");
         } else {
-            logger.error("Incompatible Java version! Please upgrade java to be at least 1.8.0_101");
-            System.exit(1);
+            String message="Incompatible Java version! Please upgrade java to be at least 1.8.0_101, you are at "+javaVersion;
+            logger.error(message);
+            throw new RuntimeException(message);
         }
 
         String writableDir=null;
@@ -68,8 +72,9 @@ public class KafkaProducerConfig {
             writableDir=env.getProperty("writable.dir");
         }
         else  {
-            logger.error("Please provide a dir path in application property writable.dir that can be written to");
-            System.exit(1);
+            String message="Please provide a dir path in application property writable.dir that can be written to";
+            logger.error(message);
+            throw new RuntimeException(message);
         }
 
         try {
@@ -81,14 +86,13 @@ public class KafkaProducerConfig {
         String jaasFile=null;
 
         try {
-            jaasFile=Util.writeJaasFile(new File(env.getProperty("writable.dir")), env.getProperty("kafka.username"), env.getProperty("kafka.password"));
+            jaasFile=Util.writeJaasFile(new File(writableDir), env.getProperty("kafka.username"), env.getProperty("kafka.password"));
         }
         catch (Exception e) {
             logger.error("Error trying to write Jaas file - {}", e.getMessage());
             e.printStackTrace();
             System.exit(1);
         }
-
 
         props.put("bootstrap.servers", env.getProperty("kafka.bootstrap.servers") );
         props.put("key.serializer", StringSerializer.class.getName() );

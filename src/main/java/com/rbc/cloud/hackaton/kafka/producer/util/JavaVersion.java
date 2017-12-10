@@ -1,5 +1,7 @@
 package com.rbc.cloud.hackaton.kafka.producer.util;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,16 +11,18 @@ public class JavaVersion {
     int minor;
     int revision;
     int update;
+    String javaVersionString;
 
     public JavaVersion(String version) {
+        this.javaVersionString=version;
         try {
             String[] versions = version.split("\\.");
 
-            Integer major = Integer.parseInt(versions[0]);
-            Integer minor = Integer.parseInt(versions[1]);
+            major = Integer.parseInt(versions[0]);
+            minor = Integer.parseInt(versions[1]);
             String[] revisionupdate = versions[2].split("_");
-            Integer revision = Integer.parseInt(revisionupdate[0]);
-            Integer update = Integer.parseInt(revisionupdate[1]);
+            revision = Integer.parseInt(revisionupdate[0]);
+            update = Integer.parseInt(revisionupdate[1]);
         } catch (Exception e) {
             logger.error("Unable to parse a version of the passed in version tea");
             throw e;
@@ -56,5 +60,37 @@ public class JavaVersion {
 
     public void setUpdate(int update) {
         this.update = update;
+    }
+
+    public Boolean greaterThan(JavaVersion minimumVersion) {
+
+        logger.info("Compare {} > {}", this, minimumVersion);
+        try {
+            Integer major = this.getMajor();
+            Integer minor = this.getMinor();
+            Integer revision = this.getRevision();
+            Integer update = this.getUpdate();
+
+            if (minor == minimumVersion.getMinor()) {
+                if (revision > minimumVersion.getRevision()) {
+                    return true;
+                }
+                else if(revision==minimumVersion.getRevision() && update >= minimumVersion.getUpdate()) {
+                    return true;
+                }
+            }
+            return false;
+
+        } catch ( Exception e) {
+            logger.error("Exception trying to parse java version - {}", e.getMessage());
+            e.printStackTrace();
+            return false;
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.DEFAULT_STYLE);
     }
 }

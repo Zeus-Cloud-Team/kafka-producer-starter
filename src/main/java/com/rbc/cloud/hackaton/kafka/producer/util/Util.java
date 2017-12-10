@@ -49,32 +49,4 @@ public class Util {
 
     }
 
-    public static Boolean checkJavaVersion(JavaVersion versionToCheck, JavaVersion minimumVersion) {
-
-        try {
-            Integer major = versionToCheck.getMajor();
-            Integer minor = versionToCheck.getMinor();
-            Integer revision = versionToCheck.getRevision();
-            Integer update = versionToCheck.getRevision();
-
-            if (minor == minimumVersion.getMinor()) {
-                if (revision > minimumVersion.getRevision()) {
-                    return true;
-                }
-                else if(revision==minimumVersion.getRevision() && update >= minimumVersion.getUpdate()) {
-                    return true;
-                }
-            }
-            return false;
-
-        } catch ( Exception e) {
-            logger.error("Exception trying to parse java version - {}", e.getMessage());
-            e.printStackTrace();
-            return false;
-        }
-
-
-
-    }
-
 }
