@@ -1,4 +1,4 @@
-package com.rbc.cloud.hackaton.kafka.producer.util;
+package com.rbc.cloud.hackathon.kafka.producer.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

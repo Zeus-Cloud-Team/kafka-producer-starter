@@ -1,0 +1,8 @@
+{"namespace": "com.rbc.cloud.hackathon.data",
+  "type": "record",
+  "name": "Cities",
+  "fields": [
+    {"name": "CityId", "type": "string"},
+    {"name": "CityName",  "type": "string"}
+  ]
+}

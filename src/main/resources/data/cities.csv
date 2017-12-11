@@ -1,0 +1,5001 @@
+CityId,CityName
+1,Oyace
+5001,Quilleco
+10001,Sosnowiec
+15001,Vielsalm
+20001,Chimbarongo
+25001,Heist-op-den-Berg
+30001,Linton
+35001,Bissegem
+40001,St. Andrews
+45001,Marzabotto
+50001,Kiel
+55001,Kilmarnock
+60001,Milton Keynes
+65001,Pollena Trocchia
+70001,Columbus
+75001,Klagenfurt
+80001,Greenock
+85001,Fresia
+90001,Capannori
+95001,Porirua
+100001,Guwahati
+105001,Tambaram
+110001,Kester
+115001,Yellowhead County
+120001,Houthalen-Helchteren
+125001,Brampton
+130001,Rochester
+135001,Liernu
+140001,Adelaide
+145001,Marentino
+150001,Girifalco
+155001,Grand-Halleux
+160001,Sant'Egidio del Monte Albino
+165001,Rovereto
+170001,Spermalie
+175001,Chandler
+180001,Herne
+185001,Les Bons Villers
+190001,Białystok
+195001,Jerez de la Frontera
+200001,Termes
+205001,Pomarolo
+210001,Kumluca
+215001,Río Verde
+220001,Schweinfurt
+225001,Lowell
+230001,Hulste
+235001,Catanzaro
+240001,Sorgà
+245001,Cambrai
+250001,Oklahoma City
+255001,Rohtak
+260001,Sinaai-Waas
+265001,Roosdaal
+270001,Kuringen
+275001,Wellingborough
+280001,Fort Providence
+285001,Sierning
+290001,Luttre
+295001,San Rafael Abajo
+300001,Saint-Prime
+305001,Aydın
+310001,Maintal
+315001,Adria
+320001,Strathcona County
+325001,Ludvika
+330001,Coldstream
+335001,Laramie
+340001,Kontich
+345001,Sint-Stevens-Woluwe
+350001,Bettiah
+355001,Värnamo
+360001,Ostra Vetere
+365001,Deventer
+370001,Villafranca in Lunigiana
+375001,Hoshiarpur
+380001,Naro
+385001,Tailles
+390001,Calgary
+395001,Camrose
+400001,Casoli
+405001,Wolfsburg
+410001,Stalhille
+415001,Chalon-sur-Saône
+420001,Castellana Sicula
+425001,Bonefro
+430001,Fort Laird
+435001,Monguelfo-Tesido/Welsberg-Taisten
+440001,Fort William
+445001,Cockburn
+450001,Paiguano
+455001,Bensheim
+460001,Wedel
+465001,Tamines
+470001,Dorval
+475001,Ogbomosho
+480001,Cerchio
+485001,Balfour
+490001,Zamość
+495001,San Joaquín
+500001,Bowling Green
+505001,Lampernisse
+510001,Colombo
+515001,Rathenow
+520001,Staßfurt
+525001,Rio Grande
+530001,Burnie
+535001,Rohtak
+540001,Deschambault
+545001,Tolve
+550001,Gibsons
+555001,Gosselies
+560001,Crieff
+565001,Rixensart
+570001,Oostkerk
+575001,Bludenz
+580001,Montgomery
+585001,Chaumont-Gistoux
+590001,Terragnolo
+595001,Assen
+600001,Sogliano Cavour
+605001,Jhang
+610001,Völklingen
+615001,Bridgnorth
+620001,Villers-lez-Heest
+625001,Beaumaris
+630001,Mörfelden-Walldorf
+635001,Colomiers
+640001,Charleroi
+645001,Aartrijke
+650001,Bowden
+655001,Kinross
+660001,Norfolk County
+665001,Medea
+670001,Bellevue
+675001,Wanaka
+680001,Collinas
+685001,Peterborough
+690001,Suarlee
+695001,Puqueldón
+700001,Ockelbo
+705001,Tarragona
+710001,Grado
+715001,South Burlington
+720001,Mont-Saint-AndrŽ
+725001,Gadag Betigeri
+730001,Santa Maria
+735001,Juiz de Fora
+740001,Latur
+745001,Blieskastel
+750001,Heilbronn
+755001,Schwedt
+760001,Valpelline
+765001,Oostkerke
+770001,Chepstow
+775001,Jemeppe-sur-Sambre
+780001,As
+785001,Limbach-Oberfrohna
+790001,Kalgoorlie-Boulder
+795001,Çaldıran
+800001,Stekene
+805001,Tarzo
+810001,Calera de Tango
+815001,Klosterneuburg
+820001,Parauapebas
+825001,Fort Wayne
+830001,Saint-Dizier
+835001,Farrukhabad-cum-Fatehgarh
+840001,Nelson
+845001,Ville-en-Hesbaye
+850001,Beigem
+855001,Habay-la-Vieille
+860001,Avigliano Umbro
+865001,Beaconsfield
+870001,Ried im Innkreis
+875001,Pinto
+880001,San Nicolás
+885001,Zittau
+890001,Kilsyth
+895001,Frutillar
+900001,Mont-Saint-AndrŽ
+905001,Corbara
+910001,Gagliato
+915001,Hereford
+920001,San Pablo
+925001,Penzance
+930001,Cedar Rapids
+935001,Schaarbeek
+940001,Cheltenham
+945001,Comblain-la-Tour
+950001,Richmond
+955001,Coatbridge
+960001,Cisnes
+965001,Wageningen
+970001,Biesme-sous-Thuin
+975001,Worksop
+980001,Anghiari
+985001,Roccasicura
+990001,Anderlues
+995001,La Florida
+1000001,Masone
+1005001,Stirling
+1010001,Leeds
+1015001,Lexington
+1020001,Badalona
+1025001,Hennigsdorf
+1030001,Osimo
+1035001,Isernia
+1040001,Spijkenisse
+1045001,Schulen
+1050001,Trieste
+1055001,Nieuwerkerken
+1060001,Priolo Gargallo
+1065001,Paderborn
+1070001,Viano
+1075001,Río Claro
+1080001,Plancenoit
+1085001,Westrem
+1090001,Booischot
+1095001,Paternopoli
+1100001,Bhubaneswar
+1105001,Santa Luzia
+1110001,Omal
+1115001,Camarones
+1120001,Châteauroux
+1125001,Lewiston
+1130001,Idar-Oberstei
+1135001,Ch‰tillon
+1140001,Chillán Viejo
+1145001,Los Muermos
+1150001,Forge-Philippe
+1155001,Melsele
+1160001,Wörgl
+1165001,Clearwater Municipal District
+1170001,Sart-Dames-Avelines
+1175001,Den Helder
+1180001,Quimper
+1185001,Collecchio
+1190001,Bracknell
+1195001,Vucht
+1200001,Torquay
+1205001,Melsbroek
+1210001,Aschaffenburg
+1215001,Serrungarina
+1220001,Castelluccio Inferiore
+1225001,FlŽnu
+1230001,Vetlanda
+1235001,Paulista
+1240001,Casablanca
+1245001,Bacabal
+1250001,Tarvisio
+1255001,Lagundo/Algund
+1260001,Delmenhorst
+1265001,Sarre
+1270001,Vlimmeren
+1275001,Colonnella
+1280001,Rio de Janeiro
+1285001,Chillán
+1290001,Limoges
+1295001,Muridke
+1300001,St. Albans
+1305001,Nadiad
+1310001,Guirsch
+1315001,Roio del Sangro
+1320001,Deline
+1325001,Bunbury
+1330001,Mulhouse
+1335001,Rivire
+1340001,Eisleben
+1345001,Richmond Hill
+1350001,Linton
+1355001,Sauvenire
+1360001,Valparai
+1365001,Castlegar
+1370001,Diadema
+1375001,Hofstade
+1380001,Narbonne
+1385001,Nellore
+1390001,Bathurst
+1395001,Nueva Imperial
+1400001,Ergani
+1405001,Tiruppur
+1410001,Fossato di Vico
+1415001,Jerzu
+1420001,Pınarbaşı
+1425001,Papasidero
+1430001,Castle Douglas
+1435001,Tirupati
+1440001,Spittal an der Drau
+1445001,Girifalco
+1450001,Mariakerke
+1455001,Bodmin
+1460001,Gubbio
+1465001,San Giovanni la Punta
+1470001,Glabais
+1475001,Grande Prairie
+1480001,Hennigsdorf
+1485001,Brindisi
+1490001,Gaspé
+1495001,Münster
+1500001,Hohenems
+1505001,Springfield
+1510001,Schifferstadt
+1515001,Thon
+1520001,Gretna
+1525001,Chillán Viejo
+1530001,Hamilton
+1535001,Lustenau
+1540001,Ceyhan
+1545001,Keswick
+1550001,Hohenems
+1555001,Tourinne
+1560001,Guntakal
+1565001,Jacksonville
+1570001,Coatbridge
+1575001,Ankara
+1580001,St. Pölten
+1585001,Isola del Gran Sasso d'Italia
+1590001,Onitsha
+1595001,Meix-Devant-Virton
+1600001,Velletri
+1605001,Rajapalaiyam
+1610001,Roveredo in Piano
+1615001,Molenbeersel
+1620001,Legnica
+1625001,Spruce Grove
+1630001,Godhra
+1635001,Caerphilly
+1640001,Friedberg
+1645001,Nalinnes
+1650001,Oelegem
+1655001,Gravilias
+1660001,Vitacura
+1665001,Sint-Gillis-bij-Dendermonde
+1670001,Shimoga
+1675001,Cras-Avernas
+1680001,Scena/Schenna
+1685001,Meerle
+1690001,Olsztyn
+1695001,Scala Coeli
+1700001,Angers
+1705001,Montgomery
+1710001,Cockburn
+1715001,Hoogstraten
+1720001,Garbsen
+1725001,Bo‘lhe
+1730001,Trazegnies
+1735001,Breda
+1740001,São Gonçalo
+1745001,Kansas City
+1750001,Altidona
+1755001,Marseille
+1760001,Shepparton
+1765001,Acerra
+1770001,Motta Visconti
+1775001,Bulzi
+1780001,Wyoming
+1785001,Bayreuth
+1790001,Hull
+1795001,Acquasparta
+1800001,Pescantina
+1805001,Lörrach
+1810001,Ingelheim
+1815001,Gualdo Tadino
+1820001,Waasmunster
+1825001,Santa Cruz
+1830001,Ulloa (Barrial)
+1835001,Hamilton
+1840001,Belfort
+1845001,Lisieux
+1850001,Veldegem
+1855001,Galway
+1860001,Quilleco
+1865001,Garbsen
+1870001,Alkmaar
+1875001,Anghiari
+1880001,La Higuera
+1885001,Thames
+1890001,Dörtyol
+1895001,Walsall
+1900001,Bolsward
+1905001,Innisfail
+1910001,Elen
+1915001,Kota
+1920001,Fayetteville
+1925001,Balıkesir
+1930001,Kortrijk
+1935001,Sitapur
+1940001,Mignanego
+1945001,Nizamabad
+1950001,Felixstowe
+1955001,Ruvo del Monte
+1960001,Fort William
+1965001,Avesta
+1970001,Warren
+1975001,Stornaway
+1980001,Millesimo
+1985001,Bolano
+1990001,Ávila
+1995001,Castelmarte
+2000001,Sterling Heights
+2005001,Lakewood
+2010001,Malonne
+2015001,Grezzana
+2020001,Hove
+2025001,Meeswijk
+2030001,Bafra
+2035001,Lille
+2040001,Bhusawal
+2045001,Pudukkottai
+2050001,Morrovalle
+2055001,Henstedt-Ulzburg
+2060001,Antwerpen
+2065001,Jodoigne-Souveraine
+2070001,St. Petersburg
+2075001,Wismar
+2080001,Boston
+2085001,Acquafredda
+2090001,North Shore
+2095001,San Martino in Pensilis
+2100001,Hindeloopen
+2105001,Chippenham
+2110001,Caprino Bergamasco
+2115001,Orciano Pisano
+2120001,Jauche
+2125001,Rosenheim
+2130001,Fauvillers
+2135001,Melsele
+2140001,Waiblingen
+2145001,Rutten
+2150001,Ham-sur-Heure-Nalinnes
+2155001,Cimitile
+2160001,Ollagüe
+2165001,Ponta Grossa
+2170001,San Lazzaro di Savena
+2175001,Wemmel
+2180001,Bergerac
+2185001,Warrington
+2190001,Kilmalcolm
+2195001,Newport
+2200001,Squillace
+2205001,Troon
+2210001,Schoonaarde
+2215001,Rüsselsheim
+2220001,Nieuwerkerken
+2225001,Ellikom
+2230001,Tulita
+2235001,San José
+2240001,Toltén
+2245001,Fallais
+2250001,Aizwal
+2255001,Akron
+2260001,Rochester
+2265001,Dornoch
+2270001,Roermond
+2275001,Oudegem
+2280001,Heerlen
+2285001,Giardinello
+2290001,Meeuwen
+2295001,Ludwigshafen
+2300001,Valbrevenna
+2305001,Tillicoultry
+2310001,Roselies
+2315001,Combarbalá
+2320001,Saint-Médard-en-Jalles
+2325001,Pike Creek
+2330001,Castellafiume
+2335001,Buckingham
+2340001,Laarne
+2345001,Hull
+2350001,Vorst
+2355001,Nazilli
+2360001,Rockville
+2365001,Glenrothes
+2370001,Aiseau-Presles
+2375001,Patarrá
+2380001,Koolkerke
+2385001,Aiseau-Presles
+2390001,Minneapolis
+2395001,San Carlos
+2400001,Bydgoszcz
+2405001,Rhisnes
+2410001,Frasnes-lez-Gosselies
+2415001,Comox
+2420001,Monte Vidon Corrado
+2425001,Gravilias
+2430001,Oostkerk
+2435001,Massimino
+2440001,Paal
+2445001,Gap
+2450001,Moerkerke
+2455001,Machynlleth
+2460001,Solingen
+2465001,ZŽtrud-Lumay
+2470001,Wigtown
+2475001,Mandi Burewala
+2480001,Peñalolén
+2485001,Huechuraba
+2490001,Caccamo
+2495001,Zweibrücken
+2500001,Habay
+2505001,Raiganj
+2510001,Pont-Saint-Martin
+2515001,Valtournenche
+2520001,Morkhoven
+2525001,Canterano
+2530001,Abbotsford
+2535001,Thon
+2540001,Burhaniye
+2545001,Meeswijk
+2550001,Whitewater Region Township
+2555001,Belgrade
+2560001,Manfredonia
+2565001,Sant'Elia a Pianisi
+2570001,Warszawa
+2575001,Hengelo
+2580001,Telfs
+2585001,Lasnigo
+2590001,Perwez
+2595001,Sesto al Reghena
+2600001,Carpignano Salentino
+2605001,Moricone
+2610001,Gosnells
+2615001,Swan Hills
+2620001,Ludwigsburg
+2625001,Lisieux
+2630001,Green Bay
+2635001,Torgnon
+2640001,Stokkem
+2645001,Nil-Saint-Vincent-Saint-Martin
+2650001,Ambleside
+2655001,Lusevera
+2660001,Blehen
+2665001,Vaux-lez-Rosieres
+2670001,Erli
+2675001,Panketal
+2680001,Nobressart
+2685001,Aubange
+2690001,Denderbelle
+2695001,Gresham
+2700001,Contagem
+2705001,Río Claro
+2710001,Upplands Väsby
+2715001,Newmarket
+2720001,Tilff
+2725001,Vaux-lez-Rosieres
+2730001,Hattiesburg
+2735001,Çermik
+2740001,Raigarh
+2745001,Quarona
+2750001,Stekene
+2755001,San Pedro de la Paz
+2760001,Barrhead
+2765001,Sint-Lambrechts-Herk
+2770001,Tamines
+2775001,Lagundo/Algund
+2780001,Westende
+2785001,Raichur
+2790001,Valkenburg aan de Geul
+2795001,Bassiano
+2800001,Heusden
+2805001,Keith
+2810001,Castelseprio
+2815001,Zandhoven
+2820001,Fumal
+2825001,Sfruz
+2830001,Ilesa
+2835001,Bournemouth
+2840001,Porto Alegre
+2845001,Dole
+2850001,Cuglieri
+2855001,Milena
+2860001,Bergeggi
+2865001,Indore
+2870001,Bad Vilbel
+2875001,Tongrinne
+2880001,Columbia
+2885001,Krems an der Donau
+2890001,Wijshagen
+2895001,Bellegem
+2900001,Bevel
+2905001,Little Rock
+2910001,Bregenz
+2915001,Antey-Saint-Andrè
+2920001,Dégelis
+2925001,Wrigley
+2930001,Baie-Saint-Paul
+2935001,Loreto
+2940001,Belmont
+2945001,Huissen
+2950001,Ratlam
+2955001,Corbais
+2960001,Spremberg
+2965001,Richmond
+2970001,Minneapolis
+2975001,San Giovanni in Galdo
+2980001,Ellon
+2985001,Kapiti
+2990001,Aubange
+2995001,Noville
+3000001,Trieste
+3005001,Salt Lake City
+3010001,Cerreto di Spoleto
+3015001,La Spezia
+3020001,Seloignes
+3025001,Collines-de-l'Outaouais
+3030001,Naperville
+3035001,Independence
+3040001,Saint-Vincent
+3045001,Mores
+3050001,Bad Dürkheim
+3055001,Wyoming
+3060001,Spy
+3065001,Motta Visconti
+3070001,Matera
+3075001,Gelsenkirchen
+3080001,Sargodha
+3085001,Pontboset
+3090001,Grey County
+3095001,Braunau am Inn
+3100001,Schwäbisch Gmünd
+3105001,Heist-op-den-Berg
+3110001,María Elena
+3115001,La Roche-sur-Yon
+3120001,l'Ecluse
+3125001,Brussel
+3130001,Ravels
+3135001,Vlissegem
+3140001,Miramichi
+3145001,Suarlee
+3150001,Salice Salentino
+3155001,Molina
+3160001,Val Rezzo
+3165001,Hulste
+3170001,Tarcento
+3175001,San Pancrazio Salentino
+3180001,San Mauro Marchesato
+3185001,Abohar
+3190001,El Monte
+3195001,Shawville
+3200001,Sapele
+3205001,Pune
+3210001,Bolano
+3215001,Morena
+3220001,Maryborough
+3225001,Villafranca d'Asti
+3230001,Zwolle
+3235001,Warangal
+3240001,Boignee
+3245001,Barchi
+3250001,Workington
+3255001,Pazarcık
+3260001,Llandovery
+3265001,Loy
+3270001,Gijzelbrechtegem
+3275001,La Pintana
+3280001,Richmond
+3285001,Coldstream
+3290001,Kanpur Cantonment
+3295001,Vespolate
+3300001,Ceyhan
+3305001,Zandhoven
+3310001,Piotrków Trybunalski
+3315001,Montes Claros
+3320001,Ede
+3325001,San Rafael
+3330001,Biloxi
+3335001,Igboho
+3340001,Comblain-la-Tour
+3345001,Houston
+3350001,Acerra
+3355001,Ercolano
+3360001,Eisleben
+3365001,Maisires
+3370001,Sonipat
+3375001,Cervino
+3380001,Glastonbury
+3385001,Vottem
+3390001,Istres
+3395001,Bielefeld
+3400001,Marbella
+3405001,Etroubles
+3410001,Teno
+3415001,Beigem
+3420001,Ödemiş
+3425001,Rivière-du-Loup
+3430001,Laon
+3435001,Bludenz
+3440001,Lusevera
+3445001,Münster
+3450001,Savannah
+3455001,Francavilla in Sinni
+3460001,Port Moody
+3465001,Lissewege
+3470001,Campomorone
+3475001,Loverval
+3480001,Khammam
+3485001,Colchester
+3490001,Hekelgem
+3495001,Recanati
+3500001,Geleen
+3505001,Whitehaven
+3510001,Mont-Saint-Guibert
+3515001,Marlborough
+3520001,Siddi
+3525001,North Battleford
+3530001,Dampicourt
+3535001,San Polo d'Enza
+3540001,Pero
+3545001,Haverhill
+3550001,Hines Creek
+3555001,Polesella
+3560001,Lavoir
+3565001,Ramskapelle
+3570001,Diepenbeek
+3575001,Tournefeuille
+3580001,Sellia Marina
+3585001,Arviat
+3590001,Caruaru
+3595001,Cowdenbeath
+3600001,Vergnies
+3605001,Pergola
+3610001,Machynlleth
+3615001,New Westminster
+3620001,Dampremy
+3625001,Harderwijk
+3630001,Ramsdonk
+3635001,Ponta Grossa
+3640001,White Rock
+3645001,Otukpo
+3650001,Guápiles
+3655001,Mustafakemalpaşa
+3660001,Talence
+3665001,San Isidro de El General
+3670001,Warrnambool
+3675001,Fort Good Hope
+3680001,Canterbury
+3685001,Brucargo
+3690001,Valleyview
+3695001,Kallo
+3700001,Primavera
+3705001,Campagna
+3710001,Nakusp
+3715001,Bad Ischl
+3720001,Taber
+3725001,Morkhoven
+3730001,Neerrepen
+3735001,OugrŽe
+3740001,Bon Accord
+3745001,Bellegem
+3750001,Bressoux
+3755001,Avellino
+3760001,Tilburg
+3765001,Haarlem
+3770001,Blevio
+3775001,Watson Lake
+3780001,Juazeiro do Norte
+3785001,Manukau
+3790001,Aberdeen
+3795001,Macul
+3800001,Izel
+3805001,Maple Ridge
+3810001,Marabá
+3815001,Cerchio
+3820001,Montebello
+3825001,Villa Verde
+3830001,Oud-Turnhout
+3835001,Dubbo
+3840001,Issime
+3845001,Brahmapur
+3850001,Ham-sur-Sambre
+3855001,Subbiano
+3860001,ThimŽon
+3865001,Rhayader
+3870001,Novo Hamburgo
+3875001,Ingooigem
+3880001,Barddhaman
+3885001,Chapecó
+3890001,Tczew
+3895001,Sylvan Lake
+3900001,Bellevue
+3905001,Milmort
+3910001,Roveredo in Piano
+3915001,Vigo
+3920001,Koblenz
+3925001,Beersel
+3930001,Tsiigehtchic
+3935001,Beervelde
+3940001,Oostende
+3945001,Carapicuíba
+3950001,Kettering
+3955001,Santa María
+3960001,Borghetto di Borbera
+3965001,Mainz
+3970001,Merchtem
+3975001,Bitterfeld-Wolfen
+3980001,Falerone
+3985001,Renlies
+3990001,Gojra
+3995001,Goiânia
+4000001,Santander
+4005001,Louvain-la-Neuve
+4010001,Contulmo
+4015001,Couthuin
+4020001,Minneapolis
+4025001,Zielona Góra
+4030001,Hatfield
+4035001,Lissewege
+4040001,Isla de Pascua
+4045001,Zeitz
+4050001,Mangalore
+4055001,Abeokuta
+4060001,Lachine
+4065001,Rosoux-Crenwick
+4070001,Leicester
+4075001,Dalcahue
+4080001,Weston-super-Mare
+4085001,Wilskerke
+4090001,Duncan
+4095001,Gattatico
+4100001,Porpetto
+4105001,Caruaru
+4110001,Filot
+4115001,Certaldo
+4120001,Valverde
+4125001,Villa Alemana
+4130001,Ham-sur-Heure
+4135001,Firenze
+4140001,Mainz
+4145001,Limbach-Oberfrohna
+4150001,Cisterna di Latina
+4155001,Outrijve
+4160001,Tolve
+4165001,Calera de Tango
+4170001,Campofelice di Fitalia
+4175001,Offenbach am Main
+4180001,Thisnes
+4185001,Vlezenbeek
+4190001,Courcelles
+4195001,Bulzi
+4200001,Scanzano Jonico
+4205001,Turriff
+4210001,Bocchigliero
+4215001,Clackmannan
+4220001,Lens-Saint-Remy
+4225001,Nicolosi
+4230001,Gouy-lez-PiŽton
+4235001,Osasco
+4240001,Rancagua
+4245001,Whangarei
+4250001,Palmilla
+4255001,Baiso
+4260001,Rigolet
+4265001,Carnoustie
+4270001,Starachowice
+4275001,Brecon
+4280001,Aiello Calabro
+4285001,Les Bulles
+4290001,San Cesario di Lecce
+4295001,Hofors
+4300001,Floreffe
+4305001,Dubbo
+4310001,Ohain
+4315001,San Ignacio
+4320001,Québec City
+4325001,Whittlesey
+4330001,Huesca
+4335001,Lauro de Freitas
+4340001,Slijpe
+4345001,Béthune
+4350001,Bearberry
+4355001,Maryborough
+4360001,Ilesa
+4365001,Giustino
+4370001,Dubuisson
+4375001,Niel-bij-As
+4380001,Fort Providence
+4385001,Londerzeel
+4390001,Wolfenbüttel
+4395001,Lusevera
+4400001,Mörfelden-Walldorf
+4405001,Buxton
+4410001,Jhang
+4415001,Airdrie
+4420001,Robelmont
+4425001,Tilff
+4430001,Puerto Octay
+4435001,Castelvecchio Calvisio
+4440001,St. Andrä
+4445001,Montefalcone nel Sannio
+4450001,Sant'Omero
+4455001,Santa Bárbara
+4460001,Shimla
+4465001,Newport
+4470001,Fairbanks
+4475001,Airdrie
+4480001,Uddevalla
+4485001,Quemchi
+4490001,Colchester
+4495001,Tavistock
+4500001,Wijnegem
+4505001,Yorkton
+4510001,Leernes
+4515001,Campomorone
+4520001,Juazeiro do Norte
+4525001,Capena
+4530001,Braunau am Inn
+4535001,San Antonio
+4540001,Burg
+4545001,Pitt Meadows
+4550001,Puntarenas
+4555001,Pelarco
+4560001,Baltimore
+4565001,Llangollen
+4570001,Meetkerke
+4575001,Northumberland
+4580001,Oban
+4585001,Macquenoise
+4590001,Asbestos
+4595001,Keiem
+4600001,Pont-Saint-Martin
+4605001,Nuragus
+4610001,Knighton
+4615001,Villafranca Tirrena
+4620001,Vichte
+4625001,Valmacca
+4630001,Pietracatella
+4635001,Kisi
+4640001,Steenhuffel
+4645001,Champdani
+4650001,Mornimont
+4655001,Ferrere
+4660001,Maidenhead
+4665001,Noicattaro
+4670001,Daussoulx
+4675001,Watermaal-Bosvoorde
+4680001,Venlo
+4685001,Heidenheim
+4690001,Fontanellato
+4695001,Camiña
+4700001,Jodoigne-Souveraine
+4705001,Malle
+4710001,Floreffe
+4715001,Belfort
+4720001,San Valentino in Abruzzo Citeriore
+4725001,Avellino
+4730001,Penhold
+4735001,Newport
+4740001,San Rafael
+4745001,Junagadh
+4750001,Villers-la-Bonne-Eau
+4755001,Maiolati Spontini
+4760001,Conca Casale
+4765001,Cercemaggiore
+4770001,Gorbea
+4775001,Oostende
+4780001,Carpignano Salentino
+4785001,Jönköping
+4790001,Temuka
+4795001,Sauris
+4800001,Bellante
+4805001,Gulbarga
+4810001,Zeist
+4815001,Te Awamutu
+4820001,Devonport
+4825001,Santa Juana
+4830001,Waver
+4835001,Habay
+4840001,Zaffelare
+4845001,Castiglione di Garfagnana
+4850001,Plainevaux
+4855001,Whangarei
+4860001,Limena
+4865001,Hattiesburg
+4870001,Stranraer
+4875001,Troon
+4880001,Grandrieu
+4885001,Bassiano
+4890001,Heestert
+4895001,Lavoir
+4900001,Sperlinga
+4905001,San José de Maipo
+4910001,Zandhoven
+4915001,San Maurizio Canavese
+4920001,Zapallar
+4925001,Montignies-sur-Sambre
+4930001,Green Bay
+4935001,Ercilla
+4940001,Hastings
+4945001,Kassel
+4950001,Vietri di Potenza
+4955001,Medemblik
+4960001,Newtonmore
+4965001,Laurencekirk
+4970001,Göttingen
+4975001,Pettoranello del Molise
+4980001,Carlisle
+4985001,Bettiah
+4990001,La Rochelle
+4995001,Ethe
+5000001,Presles
+5005001,Olivola
+5010001,Khandwa
+5015001,Primavera
+5020001,Katowice
+5025001,Vilna
+5030001,Hamme-Mille
+5035001,Hofstade
+5040001,Hoogstraten
+5045001,Whitchurch-Stouffville
+5050001,Monghidoro
+5055001,Albano di Lucania
+5060001,Hartlepool
+5065001,Cervino
+5070001,Dumbarton
+5075001,Xhoris
+5080001,Stockton-on-Tees
+5085001,Baardegem
+5090001,Malahide
+5095001,Lustin
+5100001,St. Albert
+5105001,Vejano
+5110001,Turriaco
+5115001,Aylmer
+5120001,Susegana
+5125001,Castor
+5130001,Sint-Joost-ten-Node
+5135001,Labuissire
+5140001,Exeter
+5145001,Yungay
+5150001,Hamilton
+5155001,Pont-de-Loup
+5160001,St. Albert
+5165001,Cholet
+5170001,Tiverton
+5175001,Basingstoke
+5180001,Wuppertal
+5185001,Fulda
+5190001,Abaetetuba
+5195001,Potenza
+5200001,Newcastle-upon-Tyne
+5205001,Lauterach
+5210001,Cassano Spinola
+5215001,Anghiari
+5220001,Dorgali
+5225001,Gmunden
+5230001,Pau
+5235001,Sint-Stevens-Woluwe
+5240001,Altavilla Irpina
+5245001,Requínoa
+5250001,Lübeck
+5255001,Lumaco
+5260001,Milestone
+5265001,Concón
+5270001,Remagne
+5275001,Tiruvottiyur
+5280001,Coinco
+5285001,Belmonte del Sannio
+5290001,Galbiate
+5295001,Thanjavur
+5300001,Wokingham
+5305001,Reinbek
+5310001,Dehradun
+5315001,Uppingham. Cottesmore
+5320001,Villers-la-Bonne-Eau
+5325001,Chichester
+5330001,Mayerthorpe
+5335001,Malgesso
+5340001,Gloucester
+5345001,Anzio
+5350001,Hattersheim am Main
+5355001,New Quay
+5360001,Codegua
+5365001,Millport
+5370001,Freiberg
+5375001,Ñuñoa
+5380001,Lier
+5385001,Avin
+5390001,Juazeiro
+5395001,Carlisle
+5400001,Maracalagonis
+5405001,Sauris
+5410001,Evansville
+5415001,Castel Guelfo di Bologna
+5420001,Raj Nandgaon
+5425001,Kiel
+5430001,Nijkerk
+5435001,Veldegem
+5440001,Vreren
+5445001,Kilsyth
+5450001,Jelenia Góra
+5455001,Sherborne
+5460001,Collecchio
+5465001,Elgin
+5470001,Camarones
+5475001,Keiem
+5480001,Teralfene
+5485001,Trollhättan
+5490001,Bienne-lez-Happart
+5495001,Fontanafredda
+5500001,Palermo
+5505001,Oosterhout
+5510001,Abergele
+5515001,Stuttgart
+5520001,Herk-de-Stad
+5525001,Aliano
+5530001,Labrecque
+5535001,Longvilly
+5540001,Bossire
+5545001,Nemoli
+5550001,Coalville
+5555001,Orta San Giulio
+5560001,Aalen
+5565001,Évreux
+5570001,Bonefro
+5575001,Birmingham
+5580001,Gudivada
+5585001,Rionero in Vulture
+5590001,Lompret
+5595001,Trollhättan
+5600001,Soma
+5605001,Saint-Denis
+5610001,Ruoti
+5615001,Pontypridd
+5620001,Motta Visconti
+5625001,Porvenir
+5630001,Cochamó
+5635001,Sherbrooke
+5640001,Neerharen
+5645001,Mazzano Romano
+5650001,Cantley
+5655001,Verzegnis
+5660001,Uttarpara-Kotrung
+5665001,Igboho
+5670001,Le Petit-Quevilly
+5675001,York
+5680001,Colombes
+5685001,Sarre
+5690001,Freirina
+5695001,Verrayes
+5700001,Primavera
+5705001,Ronciglione
+5710001,Cittanova
+5715001,Herstal
+5720001,Minna
+5725001,Fleurus
+5730001,São José dos Pinhais
+5735001,Ankara
+5740001,Narbolia
+5745001,Ballarat
+5750001,San Miguel
+5755001,Bredene
+5760001,Fort Resolution
+5765001,Edinburgh
+5770001,Palena
+5775001,St. Clears
+5780001,Subbiano
+5785001,Montegranaro
+5790001,Bragança
+5795001,Jemappes
+5800001,Campitello di Fassa
+5805001,Barranca
+5810001,Bressoux
+5815001,Sant'Elia a Pianisi
+5820001,Maria
+5825001,Hamm
+5830001,Lagos
+5835001,Cerchio
+5840001,Deerlijk
+5845001,Skövde
+5850001,Denny
+5855001,Bünyan
+5860001,Kanchipuram
+5865001,Lowestoft
+5870001,Oudekapelle
+5875001,Imphal
+5880001,Ockelbo
+5885001,Newquay
+5890001,Milazzo
+5895001,Township of Minden Hills
+5900001,Belmont
+5905001,Tobermory
+5910001,Mayerthorpe
+5915001,Satna
+5920001,Halle
+5925001,Columbia
+5930001,Moere
+5935001,Aalen
+5940001,Castel Giorgio
+5945001,Adoni
+5950001,Caprino Bergamasco
+5955001,Vinci
+5960001,Primavera
+5965001,Kamalia
+5970001,Sant'Angelo in Pontano
+5975001,North Battleford
+5980001,Maglie
+5985001,Catemu
+5990001,MŽlin
+5995001,Columbus
+6000001,Zerba
+6005001,Zittau
+6010001,Rajahmundry
+6015001,Pau
+6020001,Beausejour
+6025001,Roxboro
+6030001,Loughborough
+6035001,PiŽtrain
+6040001,Caccamo
+6045001,Novo Hamburgo
+6050001,Neumünster
+6055001,Borsbeek
+6060001,Krishnanagar
+6065001,Mal
+6070001,Borgerhout
+6075001,Moerkerke
+6080001,Osasco
+6085001,Lenna
+6090001,Colchester
+6095001,Barrhead
+6100001,Maria
+6105001,Sinaai-Waas
+6110001,Kumluca
+6115001,Canoas
+6120001,Mount Pearl
+6125001,Kapelle-op-den-Bos
+6130001,Stonewall
+6135001,Rivello
+6140001,Erchie
+6145001,Cuttack
+6150001,Otricoli
+6155001,Osnabrück
+6160001,Lobbes
+6165001,Wenduine
+6170001,Alto Biobío
+6175001,Wemmel
+6180001,Stekene
+6185001,Delitzsch
+6190001,Santa Marina
+6195001,Fontanellato
+6200001,Rocca d'Arce
+6205001,Parla
+6210001,San Vito Chietino
+6215001,Stargard Szczeciński
+6220001,Asigliano Veneto
+6225001,Vastogirardi
+6230001,Rotterdam
+6235001,Lolol
+6240001,Valpelline
+6245001,Cádiz
+6250001,Grezzana
+6255001,Bergerac
+6260001,Hennigsdorf
+6265001,Oberursel
+6270001,Bruckneudorf
+6275001,Oostkerk
+6280001,Mazy
+6285001,LiŽge
+6290001,Orosei
+6295001,Sint-Pieters-Woluwe
+6300001,Multan
+6305001,Introd
+6310001,Uberaba
+6315001,Ronciglione
+6320001,Andenne
+6325001,Wodonga
+6330001,Bhavnagar
+6335001,Weyburn
+6340001,Vaux-sur-Sure
+6345001,Bosa
+6350001,Oria
+6355001,Precenicco
+6360001,Thames
+6365001,Sunset Point
+6370001,Kakisa
+6375001,Kalisz
+6380001,Kolhapur
+6385001,Evansville
+6390001,Sala Baganza
+6395001,Chatteris
+6400001,Fogo
+6405001,Philadelphia
+6410001,Gudivada
+6415001,Gressan
+6420001,Angleur
+6425001,Gisborne
+6430001,Colonnella
+6435001,San Juan de Dios
+6440001,Saint-Prime
+6445001,Warrington
+6450001,Uikhoven
+6455001,Pinto
+6460001,Palencia
+6465001,Zaventem
+6470001,Whyalla
+6475001,Pelotas
+6480001,Fontaine-l'Evque
+6485001,Concepción
+6490001,Puri
+6495001,Tolve
+6500001,Port Glasgow
+6505001,Blankenfelde-Mahlow
+6510001,Lumaco
+6515001,Adana
+6520001,Corte Brugnatella
+6525001,Málaga
+6530001,Reutlingen
+6535001,Kuringen
+6540001,Elx
+6545001,Gölcük
+6550001,Pietrasanta
+6555001,Squillace
+6560001,Ribnitz-Damgarten
+6565001,Cauquenes
+6570001,Ophain-Bois-Seigneur-Isaac
+6575001,Vespolate
+6580001,Independence
+6585001,Nobressart
+6590001,Barcelona
+6595001,Roio del Sangro
+6600001,Linsmeau
+6605001,Tain
+6610001,Artena
+6615001,Erpion
+6620001,Brest
+6625001,Townsville
+6630001,Ibadan
+6635001,Coltauco
+6640001,Cochin
+6645001,Doetinchem
+6650001,Neyveli
+6655001,Ankara
+6660001,Collines-de-l'Outaouais
+6665001,Imperatriz
+6670001,Offenburg
+6675001,Centa San Nicolò
+6680001,Flushing
+6685001,Emarèse
+6690001,Friedberg
+6695001,Sevilla
+6700001,Huntley
+6705001,Linton
+6710001,Ripacandida
+6715001,Tillicoultry
+6720001,Ludwigshafen
+6725001,Ottawa
+6730001,Stockport
+6735001,Crecchio
+6740001,Aix-en-Provence
+6745001,Lens
+6750001,Denny
+6755001,Sint-Michiels
+6760001,Gangtok
+6765001,Pichidegua
+6770001,Dipignano
+6775001,HavrŽ
+6780001,Auckland
+6785001,Perwez
+6790001,Parbhani
+6795001,María Elena
+6800001,Tiverton
+6805001,Saint-Jean-Geest
+6810001,Miraj
+6815001,Forlì
+6820001,B.S.D.
+6825001,Doues
+6830001,Sulzbach
+6835001,Baranello
+6840001,Bodmin
+6845001,Arles
+6850001,Paal
+6855001,Mercedes
+6860001,Phoenix
+6865001,Kozan
+6870001,Saint-Georges
+6875001,Göteborg
+6880001,Jhang
+6885001,Herne
+6890001,Colmar
+6895001,Caloundra
+6900001,Sant'Eufemia a Maiella
+6905001,Livo
+6910001,Premeno
+6915001,Lago Verde
+6920001,Alvito
+6925001,Ligney
+6930001,MŽlin
+6935001,Blois
+6940001,Cajazeiras
+6945001,Montefiore dell'Aso
+6950001,Saint-Remy
+6955001,Solingen
+6960001,Göteborg
+6965001,Cincinnati
+6970001,Schwäbisch Gmünd
+6975001,Oostkerk
+6980001,Ottawa
+6985001,Chambord
+6990001,Sneek
+6995001,Çeşme
+7000001,Yellowknife
+7005001,Krems an der Donau
+7010001,Swansea
+7015001,Rezé
+7020001,Castellina in Chianti
+7025001,Diets-Heur
+7030001,Corswarem
+7035001,Burns Lake
+7040001,Lairg
+7045001,Guben
+7050001,Great Yarmouth
+7055001,Hawick
+7060001,Chartres
+7065001,Castel Colonna
+7070001,Concepción
+7075001,Schleswig
+7080001,Wolfsburg
+7085001,Oetingen
+7090001,Würzburg
+7095001,Albano di Lucania
+7100001,Gressan
+7105001,Aurora
+7110001,Bristol
+7115001,Yellowhead County
+7120001,Bissegem
+7125001,Austin
+7130001,Wangaratta
+7135001,Mussy-la-Ville
+7140001,Ostellato
+7145001,Temploux
+7150001,Maaseik
+7155001,Pozzuolo del Friuli
+7160001,Port Moody
+7165001,Brindisi
+7170001,Durness
+7175001,Serampore
+7180001,Houthalen-Helchteren
+7185001,Foz do Iguaçu
+7190001,Midway
+7195001,Sigillo
+7200001,Corbais
+7205001,Santiago
+7210001,Harrogate
+7215001,Naro
+7220001,Guelph
+7225001,San Giovanni in Galdo
+7230001,Itajaí
+7235001,Luttre
+7240001,Charleville-Mézières
+7245001,Meix-le-Tige
+7250001,Baarle-Hertog
+7255001,Los Álamos
+7260001,Fallo
+7265001,Ramsel
+7270001,Innisfail
+7275001,Kızılcahamam
+7280001,Mazy
+7285001,Doues
+7290001,Rhisnes
+7295001,Saint-Denis
+7300001,Wepion
+7305001,Ziano di Fiemme
+7310001,Lier
+7315001,Beypazarı
+7320001,Manchester
+7325001,Buckingham
+7330001,Wichelen
+7335001,Newbury
+7340001,Stockerau
+7345001,Neerrepen
+7350001,Le Petit-Quevilly
+7355001,Frutillar
+7360001,Comeglians
+7365001,Navsari
+7370001,Sorbo Serpico
+7375001,Bruderheim
+7380001,Jambes
+7385001,Elingen
+7390001,Vadodara
+7395001,Penzance
+7400001,Sissa
+7405001,Sint-Pieters-Kapelle
+7410001,Woutersbrakel
+7415001,Lake Cowichan
+7420001,Laval
+7425001,Bo‘lhe
+7430001,Cappelle sul Tavo
+7435001,Avin
+7440001,Newton Abbot
+7445001,Samsun
+7450001,Palmiano
+7455001,Bolzano/Bozen
+7460001,West Vancouver
+7465001,Nedlands
+7470001,Hamme
+7475001,Grandrieu
+7480001,Delta
+7485001,Ghislarengo
+7490001,Marcedusa
+7495001,Orroli
+7500001,Boulogne-Billancourt
+7505001,Las Palmas
+7510001,Hulshout
+7515001,Lochgilphead
+7520001,Rossignol
+7525001,Placilla
+7530001,Esneux
+7535001,Ockelbo
+7540001,Eyemouth
+7545001,BiercŽe
+7550001,Guben
+7555001,Cochamó
+7560001,Columbus
+7565001,Oklahoma City
+7570001,Fogo
+7575001,Tourcoing
+7580001,Drancy
+7585001,Oordegem
+7590001,Surendranagar
+7595001,Blaenau Ffestiniog
+7600001,Gävle
+7605001,Turgutlu
+7610001,Genk
+7615001,Bridgnorth
+7620001,Dunedin
+7625001,Rahim Yar Khan
+7630001,Peutie
+7635001,Navsari
+7640001,GŽrompont
+7645001,Ahmedabad
+7650001,Felixstowe
+7655001,San Piero Patti
+7660001,Sprimont
+7665001,Meerdonk
+7670001,Howrah
+7675001,Manukau
+7680001,Caprauna
+7685001,Plainevaux
+7690001,Mildura
+7695001,Grey County
+7700001,Overrepen
+7705001,Kanpur Cantonment
+7710001,Pavone del Mella
+7715001,Feira de Santana
+7720001,Anand
+7725001,Traralgon
+7730001,Fumal
+7735001,Viggianello
+7740001,Woodlands County
+7745001,Cockburn
+7750001,Gliwice
+7755001,Tofield
+7760001,Barrow-in-Furness
+7765001,La Higuera
+7770001,Schriek
+7775001,Gorzów Wielkopolski
+7780001,Rajkot
+7785001,Coinco
+7790001,Marburg
+7795001,Kolhapur
+7800001,Bleid
+7805001,Broken Hill
+7810001,Poucet
+7815001,Edam
+7820001,New Bombay
+7825001,Erie
+7830001,Lowell
+7835001,Cochrane
+7840001,Dreieich
+7845001,Skövde
+7850001,Pontey
+7855001,Herne
+7860001,Arsimont
+7865001,Carunchio
+7870001,Camaragibe
+7875001,Gentinnes
+7880001,Évreux
+7885001,Rendsburg
+7890001,Iseyin
+7895001,Vellore
+7900001,Polpenazze del Garda
+7905001,Neunkirchen
+7910001,Raigarh
+7915001,Puerto Varas
+7920001,Cittanova
+7925001,Market Drayton
+7930001,Malbaie
+7935001,Hanau
+7940001,Jemappes
+7945001,Tallahassee
+7950001,Traun
+7955001,Ife
+7960001,Bottidda
+7965001,Ganshoren
+7970001,IJlst
+7975001,Meerhout
+7980001,Varendonk
+7985001,Erpion
+7990001,Bhiwani
+7995001,Castelbaldo
+8000001,Kohima
+8005001,Kobbegem
+8010001,Medicine Hat
+8015001,Laon
+8020001,Craco
+8025001,Treglio
+8030001,Limoges
+8035001,Olsztyn
+8040001,Alvito
+8045001,Leernes
+8050001,Talagante
+8055001,Bernburg
+8060001,Forfar
+8065001,Alexandria
+8070001,Bursa
+8075001,Warspite
+8080001,San Pedro
+8085001,St. Neots
+8090001,Wick
+8095001,Hulste
+8100001,Portsoy
+8105001,Boninne
+8110001,Brandon
+8115001,Trazegnies
+8120001,Oyo
+8125001,Gonnosnò
+8130001,Emden
+8135001,Pozantı
+8140001,Sint-Laureins-Berchem
+8145001,Yungay
+8150001,Magdeburg
+8155001,Pemberton
+8160001,Landau
+8165001,Piagge
+8170001,Lambersart
+8175001,Broxburn
+8180001,Orhangazi
+8185001,Kobbegem
+8190001,Cras-Avernas
+8195001,Bungay
+8200001,Maranguape
+8205001,Branchon
+8210001,Campbeltown
+8215001,Bad Homburg v. d. Höhe
+8220001,Houffalize
+8225001,Oviedo
+8230001,İslahiye
+8235001,Wolfsberg
+8240001,Tranås
+8245001,Wayaux
+8250001,Chillán
+8255001,Lonquimay
+8260001,Penrith
+8265001,San Gregorio
+8270001,Oamaru
+8275001,Meer
+8280001,Bozeman
+8285001,Monteu Roero
+8290001,Feldkirch
+8295001,Naninne
+8300001,Madurai
+8305001,Henstedt-Ulzburg
+8310001,Güstrow
+8315001,Brucargo
+8320001,Lalbahadur Nagar
+8325001,Campobasso
+8330001,Kraków
+8335001,Bonneville
+8340001,Richmond Hill
+8345001,Moignelee
+8350001,Comblain-Fairon
+8355001,Donk
+8360001,100 Mile House
+8365001,La Hulpe
+8370001,Heinsch
+8375001,Pomarolo
+8380001,Covington
+8385001,Lakeland County
+8390001,Sutton
+8395001,Valda
+8400001,Quellón
+8405001,Barry
+8410001,Ulloa (Barrial)
+8415001,Dole
+8420001,Ammanford
+8425001,Ñiquén
+8430001,Spiere
+8435001,Radicofani
+8440001,Chhindwara
+8445001,Schriek
+8450001,Castellana Sicula
+8455001,Burlington
+8460001,Bruck an der Mur
+8465001,Kansas City
+8470001,Warburg
+8475001,Contagem
+8480001,San Giacomo degli Schiavoni
+8485001,Darbhanga
+8490001,Lapscheure
+8495001,Terragnolo
+8500001,Bolzano Vicentino
+8505001,Norfolk County
+8510001,Freiburg
+8515001,Issy-les-Moulineaux
+8520001,Antártica
+8525001,Ledeberg
+8530001,Köln
+8535001,Libramont-Chevigny
+8540001,Harrogate
+8545001,Nasino
+8550001,Albacete
+8555001,Bungay
+8560001,Fuenlabrada
+8565001,Bissegem
+8570001,Riesa
+8575001,Guelph
+8580001,Bhavnagar
+8585001,Vlezenbeek
+8590001,Sperlinga
+8595001,Kirkintilloch
+8600001,Milena
+8605001,Barrie
+8610001,Kinrooi
+8615001,Aylesbury
+8620001,Siddi
+8625001,Sint-Michiels
+8630001,Hubli
+8635001,San Rafael
+8640001,Mackay
+8645001,Rignano Garganico
+8650001,Sneek
+8655001,San Fabián
+8660001,Castiglione Messer Raimondo
+8665001,Hervey Bay
+8670001,Katsina
+8675001,Ajaccio
+8680001,Monte Vidon Corrado
+8685001,La Seyne-sur-Mer
+8690001,Muzaffargarh
+8695001,Treglio
+8700001,Hoofddorp
+8705001,Kawartha Lakes
+8710001,Motala
+8715001,Nocciano
+8720001,Olivar
+8725001,Rinconada
+8730001,San Calogero
+8735001,Ceyhan
+8740001,San Lazzaro di Savena
+8745001,North Vancouver
+8750001,Birori
+8755001,Donnas
+8760001,Sterrebeek
+8765001,Massemen
+8770001,San Jose
+8775001,Drancy
+8780001,Steenokkerzeel
+8785001,Lokeren
+8790001,Las Vegas
+8795001,Moere
+8800001,Göksun
+8805001,Ways
+8810001,Laakirchen
+8815001,Cawdor
+8820001,Lerwick
+8825001,Kaiserslauter
+8830001,Asnières-sur-Seine
+8835001,Birmingham
+8840001,Gonnosfanadiga
+8845001,Marburg
+8850001,Llanelli
+8855001,Candela
+8860001,Viddalba
+8865001,Thiaumont
+8870001,Delianuova
+8875001,Achalpur
+8880001,Tavistock
+8885001,Sooke
+8890001,Capena
+8895001,Rodez
+8900001,Bathgate
+8905001,Springfield
+8910001,Marcinelle
+8915001,Warminster
+8920001,Soma
+8925001,Vijayawada
+8930001,Mansfield
+8935001,Sant'Angelo a Cupolo
+8940001,Kapiti
+8945001,Hanret
+8950001,Balclutha
+8955001,Fino Mornasco
+8960001,Terni
+8965001,Dijon
+8970001,Minturno
+8975001,Bahawalpur
+8980001,Castello Tesino
+8985001,Värnamo
+8990001,Las Condes
+8995001,Meerhout
+9000001,Albano di Lucania
+9005001,Maizeret
+9010001,Balsas
+9015001,Asnières-sur-Seine
+9020001,Antey-Saint-Andrè
+9025001,Pescantina
+9030001,Erli
+9035001,Montluçon
+9040001,Onitsha
+9045001,Armadale
+9050001,İslahiye
+9055001,Roosdaal
+9060001,Langley
+9065001,Oostkerke
+9070001,Gaya
+9075001,Calder
+9080001,Sint-Gillis
+9085001,Bodmin
+9090001,Salice Salentino
+9095001,San Pedro
+9100001,Zelem
+9105001,Zwevegem
+9110001,Gelsenkirchen
+9115001,Keiem
+9120001,Lauw
+9125001,Olmen
+9130001,Monceau-Imbrechies
+9135001,Sonipat
+9140001,Cannes
+9145001,Sautin
+9150001,Uikhoven
+9155001,Radom
+9160001,Mielec
+9165001,Mora
+9170001,East Linton
+9175001,Lampa
+9180001,Court-Saint-Etienne
+9185001,Albisola Superiore
+9190001,Melipilla
+9195001,Devizes
+9200001,Koekelberg
+9205001,Newport
+9210001,Whitewater Region Township
+9215001,Nijkerk
+9220001,Mombaruzzo
+9225001,Coaldale
+9230001,Lanaken
+9235001,São João de Meriti
+9240001,Tournefeuille
+9245001,Dehradun
+9250001,Ingooigem
+9255001,San Damiano al Colle
+9260001,Alkmaar
+9265001,Pontevedra
+9270001,St. Neots
+9275001,Lolol
+9280001,Limón (Puerto Limón)
+9285001,Laguna Blanca
+9290001,Genzano di Lucania
+9295001,Hafizabad
+9300001,Perinaldo
+9305001,Castel Colonna
+9310001,Toltén
+9315001,Pramaggiore
+9320001,Haut-Ittre
+9325001,Cinco Esquinas
+9330001,San Fernando
+9335001,Alness
+9340001,Geesthacht
+9345001,Gavirate
+9350001,Neustrelitz
+9355001,Muridke
+9360001,Reno
+9365001,Glasgow
+9370001,Évreux
+9375001,Fort Saskatchewan
+9380001,Queilén
+9385001,Malderen
+9390001,Alkmaar
+9395001,Gillette
+9400001,Whitburn
+9405001,Siena
+9410001,Kelso
+9415001,Unnao
+9420001,Ilkeston
+9425001,Bhopal
+9430001,Whitby
+9435001,Foz do Iguaçu
+9440001,Knokke
+9445001,Iowa City
+9450001,Cape Breton Island
+9455001,Paredones
+9460001,Köthen
+9465001,Silverton
+9470001,Opheylissem
+9475001,Aiseau
+9480001,Masone
+9485001,Masullas
+9490001,Bauchi
+9495001,Upper Hutt
+9500001,Qualicum Beach
+9505001,Sorbo Serpico
+9510001,Schiltigheim
+9515001,Poole
+9520001,South Bend
+9525001,Valcourt
+9530001,New Galloway
+9535001,Peñalolén
+9540001,Cessnock
+9545001,Castello dell'Acqua
+9550001,Gurgaon
+9555001,Bad Dürkheim
+9560001,Bonneville
+9565001,Esneux
+9570001,Bharatpur
+9575001,Bayonne
+9580001,Bazzano
+9585001,Sainte-Flavie
+9590001,Huppaye
+9595001,Workington
+9600001,Sperlinga
+9605001,Mâcon
+9610001,Marystown
+9615001,Montegranaro
+9620001,Offenburg
+9625001,Gavirate
+9630001,Tiruchirapalli
+9635001,Galbiate
+9640001,Davoli
+9645001,Qutubullapur
+9650001,Price
+9655001,Bilaspur
+9660001,Cork
+9665001,Metz
+9670001,Matera
+9675001,Galvarino
+9680001,Greymouth
+9685001,Trevignano Romano
+9690001,Montefalcone nel Sannio
+9695001,Fairbanks
+9700001,Offida
+9705001,Sobral
+9710001,Patarrá
+9715001,Harrison Hot Springs
+9720001,Duns
+9725001,Montese
+9730001,Bischofshofen
+9735001,Kakisa
+9740001,Guadalupe
+9745001,Nueva Imperial
+9750001,Campinas
+9755001,Hanret
+9760001,Jamshedpur
+9765001,HŽlŽcine
+9770001,Ham-sur-Sambre
+9775001,Temse
+9780001,Sahiwal
+9785001,Hulst
+9790001,Brandenburg
+9795001,Gallodoro
+9800001,Parkland County
+9805001,Beigem
+9810001,Vilcún
+9815001,San Fele
+9820001,Leamington
+9825001,Przemyśl
+9830001,Poitiers
+9835001,Gönen
+9840001,Villers-sur-Semois
+9845001,Rijkevorsel
+9850001,Montefalcone nel Sannio
+9855001,Fort Smith
+9860001,Verdun
+9865001,Gwalior
+9870001,Cisano Bergamasco
+9875001,Steenhuffel
+9880001,Francofonte
+9885001,Tarsus
+9890001,Calbuco
+9895001,Arvier
+9900001,Santa Luzia
+9905001,Okene
+9910001,Chiusanico
+9915001,Pulle
+9920001,Gibsons
+9925001,Lasne
+9930001,Hohen Neuendorf
+9935001,Klosterneuburg
+9940001,Kolkata
+9945001,North Las Vegas
+9950001,Ramara
+9955001,Shepparton
+9960001,Wibrin
+9965001,Essene
+9970001,Eluru
+9975001,Cartago
+9980001,Forres
+9985001,Alingsås
+9990001,Chesterfield
+9995001,Rotem
+10000001,Badalona
+10005001,Gooik
+10010001,Verdun
+10015001,Ourense
+10020001,Lamorteau
+10025001,Neerheylissem
+10030001,Brixton
+10035001,Montgomery
+10040001,Bersillies-l'Abbaye
+10045001,Maidenhead
+10050001,Vastogirardi
+10055001,Salcito
+10060001,Port Glasgow
+10065001,Cercemaggiore
+10070001,Meeuwen
+10075001,Ñiquén
+10080001,Ruvo del Monte
+10085001,Avesta
+10090001,Lafayette
+10095001,Jabalpur
+10100001,Montebello sul Sangro
+10105001,Guápiles
+10110001,Stokrooie
+10115001,Queenstown
+10120001,Mangalore
+10125001,Gondiya
+10130001,Juneau
+10135001,Buken
+10140001,Bekegem
+10145001,Lot
+10150001,North Bay
+10155001,Lavoir
+10160001,Verrès
+10165001,Montebello sul Sangro
+10170001,Dampremy
+10175001,Clarksville
+10180001,Whithorn
+10185001,Mezzana
+10190001,Stevoort
+10195001,Reus
+10200001,Kilmarnock
+10205001,Namur
+10210001,Aalen
+10215001,Diyarbakır
+10220001,Leke
+10225001,Ashburton
+10230001,Celle
+10235001,Palencia
+10240001,Judenburg
+10245001,Cercemaggiore
+10250001,Rizes
+10255001,Tokoroa
+10260001,Meeuwen
+10265001,Orp-le-Grand
+10270001,Schwaz
+10275001,Ravenstein
+10280001,El Quisco
+10285001,Joué-lès-Tours
+10290001,St. Pölten
+10295001,Rignano Garganico
+10300001,Acquedolci
+10305001,Wattrelos
+10310001,Manoppello
+10315001,San Marcello Pistoiese
+10320001,Segni
+10325001,Sylvan Lake
+10330001,Scorrano
+10335001,Bad Hersfeld
+10340001,Campomarino
+10345001,Nil-Saint-Vincent-Saint-Martin
+10350001,Little Rock
+10355001,Coihaique
+10360001,Keumiee
+10365001,Gore
+10370001,Sant'Angelo in Pontano
+10375001,Pabianice
+10380001,Ferrazzano
+10385001,Pogliano Milanese
+10390001,Quellón
+10395001,Tofield
+10400001,Baltimore
+10405001,Ujjain
+10410001,Ghlin
+10415001,Grande Prairie
+10420001,Colledimacine
+10425001,Andenne
+10430001,Bolton
+10435001,Kędzierzyn-Koźle
+10440001,Villa Santo Stefano
+10445001,Salvador
+10450001,Aiello Calabro
+10455001,Brussel
+10460001,Lethbridge
+10465001,Izmir
+10470001,Fontanafredda
+10475001,Watson Lake
+10480001,Montigny-lès-Metz
+10485001,Henis
+10490001,Hamme
+10495001,Jodhpur
+10500001,New Quay
+10505001,Ferrere
+10510001,Abbotsford
+10515001,Erli
+10520001,Carunchio
+10525001,Geest-GŽrompont-Petit-RosiŽre
+10530001,Neusiedl am See
+10535001,Tübingen
+10540001,Kolkata
+10545001,Champdani
+10550001,Bonefro
+10555001,Retiro
+10560001,Saint-Rhémy-en-Bosses
+10565001,Jundiaí
+10570001,Ichalkaranji
+10575001,Castelseprio
+10580001,Langford
+10585001,Idaho Falls
+10590001,Longchamps
+10595001,Delta
+10600001,Okene
+10605001,Palmiano
+10610001,Bruckneudorf
+10615001,Antuco
+10620001,Cannole
+10625001,Borchtlombeek
+10630001,Wilmont
+10635001,Dave
+10640001,Merdorp
+10645001,Lachine
+10650001,Varsenare
+10655001,Cupar
+10660001,Pune
+10665001,Castel Guelfo di Bologna
+10670001,Hines Creek
+10675001,Kumbakonam
+10680001,Ligny
+10685001,Schönebeck
+10690001,Pirmasens
+10695001,Dreux
+10700001,Aisén
+10705001,Latour
+10710001,Paradise
+10715001,Ede
+10720001,Virton
+10725001,Reinbek
+10730001,Wichita
+10735001,Klagenfurt
+10740001,Tarzo
+10745001,Seloignes
+10750001,Chestermere
+10755001,Ch‰telet
+10760001,Wuppertal
+10765001,Comano
+10770001,Estación Central
+10775001,Bissegem
+10780001,Burns Lake
+10785001,Enschede
+10790001,Santa Flavia
+10795001,Kozhikode
+10800001,Cercepiccola
+10805001,Villarrica
+10810001,Driffield
+10815001,Katowice
+10820001,Saint-LŽger
+10825001,Sint-Stevens-Woluwe
+10830001,Truro
+10835001,Igboho
+10840001,La Estrella
+10845001,Merksplas
+10850001,Poggio Berni
+10855001,Villers-la-Loue
+10860001,Sant'Agapito
+10865001,Osnabrück
+10870001,Lithgow
+10875001,La Baie
+10880001,Pulderbos
+10885001,Petrolina
+10890001,Rio Grande
+10895001,Arras
+10900001,Guntur
+10905001,Canmore
+10910001,Oberpullendorf
+10915001,Montebello
+10920001,Olivar
+10925001,Bandırma
+10930001,Tongerlo
+10935001,Port Harcourt
+10940001,Tourinnes-Saint-Lambert
+10945001,Tuscaloosa
+10950001,Cork
+10955001,Selva di Cadore
+10960001,Jupille-sur-Meuse
+10965001,Nashik
+10970001,Jasper
+10975001,Saharanpur
+10980001,Vilna
+10985001,Cajazeiras
+10990001,Bury St. Edmunds
+10995001,Chester
+11000001,Surat
+11005001,Tropea
+11010001,Bournemouth
+11015001,Alix
+11020001,Emden
+11025001,Ludlow
+11030001,Bearberry
+11035001,Béthune
+11040001,Weymouth
+11045001,Cartago
+11050001,Malonne
+11055001,Sint-Pieters-Leeuw
+11060001,Groß-Gerau
+11065001,Wimbledon
+11070001,Lochranza
+11075001,Sant'Omero
+11080001,Clydebank
+11085001,My
+11090001,Merthyr Tydfil
+11095001,Mogliano
+11100001,Cambridge
+11105001,Bamberg
+11110001,Issy-les-Moulineaux
+11115001,Calama
+11120001,Hazaribag
+11125001,Asansol
+11130001,Roccanova
+11135001,Montemilone
+11140001,Mira Bhayandar
+11145001,Terneuzen
+11150001,Vance
+11155001,Piagge
+11160001,Brest
+11165001,Whitby
+11170001,Ledbury
+11175001,Loupoigne
+11180001,Bielefeld
+11185001,Tranås
+11190001,Adria
+11195001,Bury St. Edmunds
+11200001,Itabuna
+11205001,Elgin
+11210001,Osorno
+11215001,Cessnock
+11220001,Liernu
+11225001,Chichester
+11230001,Belgrave
+11235001,Sotteville-lès-Rouen
+11240001,Thon
+11245001,Guadalupe
+11250001,Nieuwkerken-Waas
+11255001,Dandenong
+11260001,Bernau
+11265001,Tollembeek
+11270001,Alcalá de Henares
+11275001,Brecon
+11280001,Washington
+11285001,Grembergen
+11290001,Turriaco
+11295001,Joué-lès-Tours
+11300001,Montefiore dell'Aso
+11305001,Sellia Marina
+11310001,Wuppertal
+11315001,Quickborn
+11320001,Bendigo
+11325001,Gouy-lez-PiŽton
+11330001,Kessenich
+11335001,Joondalup
+11340001,Gonda
+11345001,Mahbubnagar
+11350001,Juiz de Fora
+11355001,Belo Horizonte
+11360001,Perugia
+11365001,Anchorage
+11370001,Modena
+11375001,Timon
+11380001,Enines
+11385001,Bienne-lez-Happart
+11390001,Mazzano Romano
+11395001,Knittelfeld
+11400001,Kraków
+11405001,Otegem
+11410001,Antibes
+11415001,Genova
+11420001,Presteigne
+11425001,Şereflikoçhisar
+11430001,Wernigerode
+11435001,Srinagar
+11440001,Lossiemouth
+11445001,Beypazarı
+11450001,Conselice
+11455001,Esslingen
+11460001,Casoli
+11465001,Tilburg
+11470001,Rochester
+11475001,Coupar Angus
+11480001,Marsciano
+11485001,Falkensee
+11490001,Gallicchio
+11495001,Boussu-lez-Walcourt
+11500001,Pisa
+11505001,Slough
+11510001,Bastia
+11515001,Siverek
+11520001,Grand Island
+11525001,Bautzen
+11530001,Vilcún
+11535001,Guápiles
+11540001,Tavier
+11545001,Ranst
+11550001,Orp-Jauche
+11555001,Périgueux
+11560001,Tuticorin
+11565001,Brentwood
+11570001,Lunel
+11575001,Siliguri
+11580001,Chiusa/Klausen
+11585001,Alençon
+11590001,Arras
+11595001,Westport
+11600001,Millet
+11605001,Dalkeith
+11610001,Litueche
+11615001,Tranås
+11620001,Durgapur
+11625001,Sandy
+11630001,Portree
+11635001,Galway
+11640001,Queanbeyan
+11645001,Milton Keynes
+11650001,Altmünster
+11655001,Notre-Dame-de-la-Salette
+11660001,Noorderwijk
+11665001,Piana degli Albanesi
+11670001,Strausberg
+11675001,Drachten
+11680001,Bonavista
+11685001,Baisy-Thy
+11690001,Acoz
+11695001,Montigny-lès-Metz
+11700001,Tulita
+11705001,Haut-Ittre
+11710001,Orosei
+11715001,Padre las Casas
+11720001,Moustier-sur-Sambre
+11725001,Calvera
+11730001,Täby
+11735001,Mayerthorpe
+11740001,Tucson
+11745001,Terneuzen
+11750001,Merdorp
+11755001,Ceyhan
+11760001,Pietraroja
+11765001,Saint-Marcel
+11770001,Cockburn
+11775001,Flushing
+11780001,Graz
+11785001,Hall in Tirol
+11790001,Liverpool
+11795001,Nalinnes
+11800001,Arviat
+11805001,Enschede
+11810001,Hildesheim
+11815001,Lachine
+11820001,Melrose
+11825001,Provo
+11830001,Matera
+11835001,Bahawalnagar
+11840001,Caruaru
+11845001,Bansberia
+11850001,Sluis
+11855001,Curarrehue
+11860001,La Granja
+11865001,Livo
+11870001,Dongelberg
+11875001,Coreglia Antelminelli
+11880001,Tarragona
+11885001,Gravelbourg
+11890001,Wood Buffalo
+11895001,Erlangen
+11900001,Lugo
+11905001,Drogenbos
+11910001,Kayseri
+11915001,Retie
+11920001,Pepingen
+11925001,Kırıkhan
+11930001,Harlingen
+11935001,Cellara
+11940001,Adana
+11945001,Lecce
+11950001,Ahrensburg
+11955001,Sclayn
+11960001,Berbroek
+11965001,Wunstorf
+11970001,Sint-Kwintens-Lennik
+11975001,Newquay
+11980001,Las Cabras
+11985001,Serampore
+11990001,Kessenich
+11995001,Rutten
+12000001,Liverpool
+12005001,Villers-aux-Tours
+12010001,Nethen
+12015001,Newbury
+12020001,Teno
+12025001,Acosse
+12030001,Anlier
+12035001,Owensboro
+12040001,Bègles
+12045001,Concepción
+12050001,Portland
+12055001,Bodmin
+12060001,Primavera
+12065001,Villafalletto
+12070001,Alexandra
+12075001,Bazzano
+12080001,Wetaskiwin
+12085001,Franeker
+12090001,Hoshiarpur
+12095001,Boechout
+12100001,Liedekerke
+12105001,South Dum Dum
+12110001,Stirling
+12115001,Hathras
+12120001,Ely
+12125001,San Mauro Cilento
+12130001,Hollogne-sur-Geer
+12135001,Rezzoaglio
+12140001,León
+12145001,Montpelier
+12150001,Oetingen
+12155001,Wilhelmshaven
+12160001,Meeffe
+12165001,Lidingo
+12170001,Castiglione del Lago
+12175001,South Perth
+12180001,Meix-Devant-Virton
+12185001,Aberdeen
+12190001,Linkhout
+12195001,Oberursel
+12200001,Puerto Montt
+12205001,Borgone Susa
+12210001,Gonnosnò
+12215001,Sant'Eusanio Forconese
+12220001,Mielec
+12225001,Kidwelly
+12230001,Graven Grez-Doiceau
+12235001,Bromyard
+12240001,Zutendaal
+12245001,Enna
+12250001,Amravati
+12255001,Rohtak
+12260001,Gelsenkirchen
+12265001,Great Yarmouth
+12270001,Bajardo
+12275001,Mantova
+12280001,Sirsa
+12285001,Ambleside
+12290001,Carcassonne
+12295001,Rocca Massima
+12300001,Armo
+12305001,Dhule
+12310001,Blevio
+12315001,Wolkrange
+12320001,Barasat
+12325001,Bargagli
+12330001,Diego de Almagro
+12335001,Neyveli
+12340001,Grantham
+12345001,Siddi
+12350001,Jefferson City
+12355001,Couture-Saint-Germain
+12360001,Wilmington
+12365001,Bischofshofen
+12370001,Khandwa
+12375001,Perquenco
+12380001,Bollnäs
+12385001,Segovia
+12390001,Baunatal
+12395001,Bulnes
+12400001,LiŽge
+12405001,Panketal
+12410001,Redlands
+12415001,Huesca
+12420001,San Isidro de El General
+12425001,Kozan
+12430001,Inuvik
+12435001,Sogliano Cavour
+12440001,Gojra
+12445001,Santa Caterina Villarmosa
+12450001,Huelva
+12455001,Asti
+12460001,Thirimont
+12465001,Saint-Pierre
+12470001,Driekapellen
+12475001,Dave
+12480001,Riesa
+12485001,Kampenhout
+12490001,Whithorn
+12495001,Marke
+12500001,Boorsem
+12505001,Jennersdorf
+12510001,Aartrijke
+12515001,Tay
+12520001,Borsbeek
+12525001,Paraíso
+12530001,Butzbach
+12535001,Rockhampton
+12540001,Cardedu
+12545001,Crawley
+12550001,Périgueux
+12555001,Sunshine Coast Regional District
+12560001,Chartres
+12565001,Melazzo
+12570001,Rignano Garganico
+12575001,Donk
+12580001,Varanasi
+12585001,Grafton
+12590001,Beawar
+12595001,Kayseri
+12600001,Montacuto
+12605001,Rothesay
+12610001,Luttre
+12615001,Zandhoven
+12620001,Tenby
+12625001,Bussolengo
+12630001,Avin
+12635001,Gorinchem
+12640001,Jennersdorf
+12645001,Udaipur
+12650001,Troyes
+12655001,Peterborough
+12660001,Rodez
+12665001,Grand-Halleux
+12670001,Feldkirch
+12675001,Liedekerke
+12680001,Baulers
+12685001,Flushing
+12690001,Bellingen
+12695001,Gorinchem
+12700001,Dalcahue
+12705001,Machalí
+12710001,Castelmarte
+12715001,Hofstade
+12720001,Elsene
+12725001,HŽlŽcine
+12730001,Şereflikoçhisar
+12735001,Vihari
+12740001,Ways
+12745001,Villa Faraldi
+12750001,Viddalba
+12755001,Avellino
+12760001,Heusden-Zolder
+12765001,Meetkerke
+12770001,Villers-la-Tour
+12775001,Nieuwegein
+12780001,Lo Prado
+12785001,Negrete
+12790001,Viranşehir
+12795001,Yerbas Buenas
+12800001,Rizes
+12805001,Livingston
+12810001,Sanluri
+12815001,Autelbas
+12820001,Pondicherry
+12825001,Châlons-en-Champagne
+12830001,Oyen
+12835001,Wichita
+12840001,Tregaron
+12845001,Forges
+12850001,Quimper
+12855001,Avesta
+12860001,Sperlinga
+12865001,Dunedin
+12870001,Molina
+12875001,Belgrade
+12880001,Pudahuel
+12885001,Itajaí
+12890001,Jalandhar (Jullundur)
+12895001,Thuillies
+12900001,Charters Towers
+12905001,Radebeul
+12910001,Gooik
+12915001,Oostkerke
+12920001,Torgnon
+12925001,Queanbeyan
+12930001,Fairbanks
+12935001,Lesve
+12940001,Nellore
+12945001,San Miguel
+12950001,Erpion
+12955001,Ajax
+12960001,Prince George
+12965001,Dewas
+12970001,Alness
+12975001,Hartlepool
+12980001,Ransart
+12985001,Orp-le-Grand
+12990001,Ramara
+12995001,Senftenberg
+13000001,Biała Podlaska
+13005001,Llangefni
+13010001,Darbhanga
+13015001,Chiari
+13020001,Grangemouth
+13025001,Asso
+13030001,Amroha
+13035001,Montigny-le-Tilleul
+13040001,Tucson
+13045001,Catemu
+13050001,Oss
+13055001,Halanzy
+13060001,Maizeret
+13065001,Torquay
+13070001,Asti
+13075001,Rostock
+13080001,Vorselaar
+13085001,High Wycombe
+13090001,Schoonaarde
+13095001,Capestrano
+13100001,Mysore
+13105001,Raj Nandgaon
+13110001,Gandhinagar
+13115001,Santa Luzia
+13120001,Glimes
+13125001,Huesca
+13130001,Cisnes
+13135001,Santa Cruz de Tenerife
+13140001,Assen
+13145001,Okpoko
+13150001,Nuraminis
+13155001,Gualdo Cattaneo
+13160001,Dundee
+13165001,Sutton
+13170001,Turriff
+13175001,Isola del Gran Sasso d'Italia
+13180001,Montleban
+13185001,Montebelluna
+13190001,Laramie
+13195001,Cisano sul Neva
+13200001,Rycroft
+13205001,Eernegem
+13210001,St. Johann in Tirol
+13215001,Alviano
+13220001,San José
+13225001,Uyo
+13230001,Uberaba
+13235001,Ruette
+13240001,Champion
+13245001,Mellery
+13250001,Dhanbad
+13255001,San Pancrazio Salentino
+13260001,Torchiarolo
+13265001,Leugnies
+13270001,Ingraj Bazar
+13275001,Maltignano
+13280001,Ávila
+13285001,Champion
+13290001,Val Rezzo
+13295001,Daiano
+13300001,Fort Laird
+13305001,San Maurizio Canavese
+13310001,Price
+13315001,The Hague
+13320001,Parral
+13325001,Reading
+13330001,Kanchrapara
+13335001,Erciş
+13340001,Llangefni
+13345001,Oudenaken
+13350001,Parkland County
+13355001,Malbaie
+13360001,Sialkot
+13365001,Tiegem
+13370001,Spittal an der Drau
+13375001,Contulmo
+13380001,Bad Vöslau
+13385001,Castres
+13390001,Marcq-en-Baroeul
+13395001,Berbroek
+13400001,Villers-Perwin
+13405001,Bouffioulx
+13410001,Lustenau
+13415001,Asti
+13420001,Auckland
+13425001,Neunkirchen
+13430001,Requínoa
+13435001,Gretna
+13440001,Bulzi
+13445001,Abaetetuba
+13450001,Aberystwyth
+13455001,Malonne
+13460001,Gander
+13465001,Wedel
+13470001,Huechuraba
+13475001,Balen
+13480001,Neerglabbeek
+13485001,Westkerke
+13490001,Abohar
+13495001,Grandrieu
+13500001,Harrogate
+13505001,La Roche-sur-Yon
+13510001,Cortil-Noirmont
+13515001,Ancaster Town
+13520001,Meix-le-Tige
+13525001,Oranienburg
+13530001,Bojano
+13535001,Bad Hersfeld
+13540001,Marburg
+13545001,Episcopia
+13550001,Overland Park
+13555001,Campinas
+13560001,Punitaqui
+13565001,Litueche
+13570001,Darbhanga
+13575001,Te Awamutu
+13580001,Solre-sur-Sambre
+13585001,Fort Resolution
+13590001,Kasterlee
+13595001,Bludenz
+13600001,Rohtak
+13605001,Rastatt
+13610001,Springfield
+13615001,Salvador
+13620001,Castel San Niccolò
+13625001,Joinville
+13630001,Vichte
+13635001,Bozeman
+13640001,Barchi
+13645001,Belsele
+13650001,Mahbubnagar
+13655001,Pocatello
+13660001,Denderwindeke
+13665001,Etawah
+13670001,Montoggio
+13675001,Purranque
+13680001,Bhusawal
+13685001,Fallo
+13690001,Retford
+13695001,Ilbono
+13700001,Pucón
+13705001,Beaumaris
+13710001,Calgary
+13715001,Orai
+13720001,Lasne
+13725001,Hilversum
+13730001,Ansfelden
+13735001,Hunstanton
+13740001,Siverek
+13745001,Vandoies/Vintl
+13750001,Almelo
+13755001,Evere
+13760001,Nova Iguaçu
+13765001,Bromley
+13770001,Giardinello
+13775001,Waidhofen an der Ybbs
+13780001,Mechelen-aan-de-Maas
+13785001,Altmünster
+13790001,Lauregno/Laurein
+13795001,Le Petit-Quevilly
+13800001,Malderen
+13805001,Drumheller
+13810001,Wellington
+13815001,Sant'Angelo a Fasanella
+13820001,Quinta de Tilcoco
+13825001,Culemborg
+13830001,Casablanca
+13835001,Şanlıurfa
+13840001,Bonefro
+13845001,Kamalia
+13850001,Salt Spring Island
+13855001,Ternat
+13860001,Opwijk
+13865001,Penrith
+13870001,Northampton
+13875001,Surat
+13880001,Rocourt
+13885001,Portobuffolè
+13890001,Aosta
+13895001,Cannole
+13900001,Marcedusa
+13905001,Raj Nandgaon
+13910001,Villers-aux-Tours
+13915001,Södertälje
+13920001,Mansfield-et-Pontefract
+13925001,Gibsons
+13930001,San Bernardo
+13935001,Colleretto Castelnuovo
+13940001,El Bosque
+13945001,Ramsel
+13950001,Bally
+13955001,Bazel
+13960001,Tilly
+13965001,Galway
+13970001,Santander
+13975001,San Pedro
+13980001,Milmort
+13985001,Orbais
+13990001,Wazirabad
+13995001,Clydebank
+14000001,Auburn
+14005001,Overrepen
+14010001,Pontarlier
+14015001,Mores
+14020001,Corbara
+14025001,Vliermaalroot
+14030001,Gianico
+14035001,Musson
+14040001,Prè-Saint-Didier
+14045001,Phoenix
+14050001,Marano Lagunare
+14055001,Dipignano
+14060001,Labico
+14065001,Curridabat
+14070001,Beypazarı
+14075001,Paine
+14080001,Leominster
+14085001,Rangiora
+14090001,Loksbergen
+14095001,Knittelfeld
+14100001,Sorbo Serpico
+14105001,Vetlanda
+14110001,Mascalucia
+14115001,Grobbendonk
+14120001,Adria
+14125001,Karacabey
+14130001,Stonewall
+14135001,Lochristi
+14140001,Lauder
+14145001,Kerikeri
+14150001,Anzi
+14155001,Hastings
+14160001,Poggio Berni
+14165001,Voitsberg
+14170001,Alviano
+14175001,Geertruidenberg
+14180001,Neufeld an der Leitha
+14185001,Motueka
+14190001,Kozhikode
+14195001,Dieppe
+14200001,Tamworth
+14205001,Munich
+14210001,Widooie
+14215001,Norfolk
+14220001,Teltow
+14225001,San Calogero
+14230001,San Juan de la Costa
+14235001,Gore
+14240001,Louth
+14245001,Zwevegem
+14250001,Norderstedt
+14255001,Noida
+14260001,Kanpur
+14265001,Masterton
+14270001,Haren
+14275001,Amstelveen
+14280001,Whangarei
+14285001,Pastena
+14290001,Güssing
+14295001,Overmere
+14300001,Grobbendonk
+14305001,Villers-Poterie
+14310001,Lunel
+14315001,Caerphilly
+14320001,Aachen
+14325001,Pratovecchio
+14330001,Águas Lindas de Goiás
+14335001,Renfrew
+14340001,High Level
+14345001,Maunath Bhanjan
+14350001,Castelló
+14355001,Woerden
+14360001,San Esteban
+14365001,Kampenhout
+14370001,Sart-Dames-Avelines
+14375001,Lichtaart
+14380001,Gallodoro
+14385001,Levallois-Perret
+14390001,Montgomery
+14395001,Siculiana
+14400001,Coatbridge
+14405001,Minderhout
+14410001,Zele
+14415001,Sars-la-Buissire
+14420001,Puqueldón
+14425001,Lo Espejo
+14430001,Tramatza
+14435001,Holyhead
+14440001,Cache Creek
+14445001,Hannut
+14450001,Kailua
+14455001,Keswick
+14460001,Penticton
+14465001,College
+14470001,Heerlen
+14475001,Talca
+14480001,Fresno
+14485001,Gallicchio
+14490001,Signeulx
+14495001,Brugge Bruges
+14500001,Cuxhaven
+14505001,Rollegem
+14510001,Guysborough
+14515001,Padre las Casas
+14520001,Kilmarnock
+14525001,Malkajgiri
+14530001,Desteldonk
+14535001,Valkenburg aan de Geul
+14540001,Nieuwenrode
+14545001,Namen
+14550001,Kirkcaldy
+14555001,Las Palmas
+14560001,Rosarno
+14565001,Shreveport
+14570001,Newport
+14575001,Bastogne
+14580001,Talagante
+14585001,Pickering
+14590001,Rivire
+14595001,Veldegem
+14600001,Champdani
+14605001,Giarratana
+14610001,Nieuwmunster
+14615001,Benalla
+14620001,Deurne
+14625001,Sagrada Familia
+14630001,Ludlow
+14635001,Lockerbie
+14640001,Zandvoorde
+14645001,FerriŽres
+14650001,Bulandshahr
+14655001,Glenrothes
+14660001,Chennai
+14665001,Cabildo
+14670001,Francavilla in Sinni
+14675001,Oostakker
+14680001,Palmerston
+14685001,Polcenigo
+14690001,Loksbergen
+14695001,Fino Mornasco
+14700001,Toronto
+14705001,Celle
+14710001,Hannut
+14715001,Wimbledon
+14720001,Herentals
+14725001,Sachs Harbour
+14730001,Mazy
+14735001,Milestone
+14740001,Schulen
+14745001,Wrexham
+14750001,Verona
+14755001,Roccanova
+14760001,Genappe
+14765001,Mühlheim am Main
+14770001,Pembroke
+14775001,Zeitz
+14780001,Mérignac
+14785001,Whitehorse
+14790001,Cargovil
+14795001,Erode
+14800001,Montes Claros
+14805001,Kallo
+14810001,Lerum
+14815001,Halifax
+14820001,Leval-Chaudeville
+14825001,Saint-Lô
+14830001,Penna San Giovanni
+14835001,Neuville-en-Condroz
+14840001,Bayeux
+14845001,Moio Alcantara
+14850001,Burhaniye
+14855001,Haddington
+14860001,Krishnanagar
+14865001,Sete Lagoas
+14870001,Upplands Väsby
+14875001,Edmonton
+14880001,Recanati
+14885001,Marbaix
+14890001,Boo
+14895001,Bellante
+14900001,Canterano
+14905001,Verrebroek
+14910001,St. Johann in Tirol
+14915001,Habay
+14920001,Patalillo
+14925001,Panihati
+14930001,Ingelheim
+14935001,Torgny
+14940001,Alajuela
+14945001,Bottidda
+14950001,Flamierge
+14955001,Monguelfo-Tesido/Welsberg-Taisten
+14960001,Porirua
+14965001,Scena/Schenna
+14970001,Vöcklabruck
+14975001,Douai
+14980001,Mersin
+14985001,Paupisi
+14990001,Ofena
+14995001,Beverley
+15000001,El Quisco
+15005001,Ollolai
+15010001,Canmore
+15015001,Neuville-en-Condroz
+15020001,Leipzig
+15025001,Stamford
+15030001,San Vito Chietino
+15035001,Bredene
+15040001,Bafra
+15045001,Ludhiana
+15050001,Hoorn
+15055001,Haßloch
+15060001,Libramont-Chevigny
+15065001,Mechelen-aan-de-Maas
+15070001,Pont-Saint-Martin
+15075001,Champlain
+15080001,Berwick
+15085001,Dibrugarh
+15090001,Rae Bareli
+15095001,Papasidero
+15100001,Eberswalde-Finow
+15105001,Soye
+15110001,Horsham
+15115001,Kempten
+15120001,Manisa
+15125001,Chapadinha
+15130001,Pinkafeld
+15135001,Wolvertem
+15140001,Lusevera
+15145001,Annapolis Royal
+15150001,Umbertide
+15155001,Santander
+15160001,Maglie
+15165001,Anzegem
+15170001,Mobile
+15175001,Falisolle
+15180001,Compiègne
+15185001,Chiauci
+15190001,Macquenoise
+15195001,Tarbes
+15200001,Hamme
+15205001,Beerst
+15210001,Raichur
+15215001,Gespeg
+15220001,Carbonear
+15225001,WanfercŽe-Baulet
+15230001,Gressoney-La-Trinitè
+15235001,Kalisz
+15240001,Newquay
+15245001,Campos dos Goytacazes
+15250001,Warrnambool
+15255001,Castel Ritaldi
+15260001,Saint-Malo
+15265001,Blaenau Ffestiniog
+15270001,Helmond
+15275001,Sierning
+15280001,Bergen Mons
+15285001,Petit-Thier
+15290001,St. Austell
+15295001,Wrigley
+15300001,Houston
+15305001,Södertälje
+15310001,Sachs Harbour
+15315001,Houston
+15320001,Verzegnis
+15325001,Neu-Ulm
+15330001,Marilles
+15335001,Peralillo
+15340001,Grand-Halleux
+15345001,Emden
+15350001,Matera
+15355001,Puntarenas
+15360001,Corroy-le-Grand
+15365001,Etalle
+15370001,March
+15375001,Ödemiş
+15380001,Pollena Trocchia
+15385001,Sirsa
+15390001,Newcastle-upon-Tyne
+15395001,Filignano
+15400001,Bad Vilbel
+15405001,Haasdonk
+15410001,Kilsyth
+15415001,Heist-op-den-Berg
+15420001,Lakeshore
+15425001,Sint-Stevens-Woluwe
+15430001,Green Bay
+15435001,Bahawalnagar
+15440001,Castanhal
+15445001,Mersin
+15450001,Bihar Sharif
+15455001,Colombes
+15460001,San Marcello Pistoiese
+15465001,Solre-Saint-GŽry
+15470001,Tübingen
+15475001,West Ham
+15480001,Ferrere
+15485001,Rhemes-Notre-Dame
+15490001,Melton Mowbray
+15495001,Oakham
+15500001,Puri
+15505001,Monfumo
+15510001,San Mauro Cilento
+15515001,Borsbeek
+15520001,Cheltenham
+15525001,Belmonte del Sannio
+15530001,Zandhoven
+15535001,San Nicolás
+15540001,Ragnies
+15545001,Oklahoma City
+15550001,Schellebelle
+15555001,Bayswater
+15560001,Esneux
+15565001,Diepenbeek
+15570001,Torno
+15575001,Vancouver
+15580001,Avesta
+15585001,Boston
+15590001,Frankfurt am Main
+15595001,Sant'Omero
+15600001,Lions Bay
+15605001,Banff
+15610001,Nieuwegein
+15615001,Piancastagnaio
+15620001,Saint-Denis
+15625001,Kano
+15630001,Hazaribag
+15635001,Calmar
+15640001,Colchester
+15645001,Hemel Hempstead
+15650001,San Sostene
+15655001,Ñiquén
+15660001,Ourense
+15665001,Marbais
+15670001,Gonnosfanadiga
+15675001,Sagar
+15680001,Dover
+15685001,Allumiere
+15690001,Comeglians
+15695001,Kanchrapara
+15700001,Cumbernauld
+15705001,Springfield
+15710001,Bhiwandi
+15715001,Olinda
+15720001,Ramsel
+15725001,CŽroux-Mousty
+15730001,Hualpén
+15735001,Fort William
+15740001,Weiterstadt
+15745001,Cressa
+15750001,Cache Creek
+15755001,Freiberg
+15760001,Huppaye
+15765001,Budaun
+15770001,Purral
+15775001,Schriek
+15780001,Herne
+15785001,Harnoncourt
+15790001,Tofield
+15795001,Newcastle
+15800001,San Jose
+15805001,Viano
+15810001,Jefferson City
+15815001,Dunfermline
+15820001,Kanpur
+15825001,Scalloway
+15830001,Troyes
+15835001,Dudley
+15840001,Corral
+15845001,Marabá
+15850001,Chelsea
+15855001,Mont-Sainte-Genevive
+15860001,Meerhout
+15865001,Stonewall
+15870001,Uddevalla
+15875001,San Pietro al Tanagro
+15880001,Bernburg
+15885001,Roccanova
+15890001,Haut-Ittre
+15895001,Luik
+15900001,Milena
+15905001,l'Ecluse
+15910001,Ilesa
+15915001,Mysore
+15920001,Woutersbrakel
+15925001,Baarle-Hertog
+15930001,Aisén
+15935001,Ried im Innkreis
+15940001,Turriff
+15945001,Panquehue
+15950001,Katihar
+15955001,La Baie
+15960001,Peterborough
+15965001,Daiano
+15970001,Montpellier
+15975001,Neuville-en-Condroz
+15980001,Jaén
+15985001,Bonnyville
+15990001,Bovigny
+15995001,Solapur
+16000001,Panjim
+16005001,Loncoche
+16010001,Ninhue
+16015001,Frauenkirchen
+16020001,Villeneuve-d'Ascq
+16025001,Opoeteren
+16030001,Pemberton
+16035001,Dhanbad
+16040001,Panquehue
+16045001,North Battleford
+16050001,Omaha
+16055001,Mount Isa
+16060001,Bilbo
+16065001,Gavorrano
+16070001,Pontevedra
+16075001,Berlin
+16080001,LiŽge
+16085001,Cap-Saint-Ignace
+16090001,Radicofani
+16095001,Osogbo
+16100001,Yamuna Nagar
+16105001,Pulle
+16110001,Vitry-sur-Seine
+16115001,Ludvika
+16120001,Cerro Navia
+16125001,Oranienburg
+16130001,San Benedetto del Tronto
+16135001,Quilpué
+16140001,Qutubullapur
+16145001,Hamme-Mille
+16150001,Wha Ti
+16155001,Rahim Yar Khan
+16160001,Rodez
+16165001,Jauche
+16170001,Saint-Rhémy-en-Bosses
+16175001,Toowoomba
+16180001,Darmstadt
+16185001,Arles
+16190001,Borchtlombeek
+16195001,Bristol
+16200001,Polino
+16205001,Jaranwala
+16210001,Rigolet
+16215001,Biloxi
+16220001,Rajapalaiyam
+16225001,Herselt
+16230001,Newcastle-upon-Tyne
+16235001,Patarrá
+16240001,Ancona
+16245001,Rycroft
+16250001,Potsdam
+16255001,Sasaram
+16260001,Gulfport
+16265001,Strausberg
+16270001,Little Rock
+16275001,Terragnolo
+16280001,Casanova Elvo
+16285001,Minneapolis
+16290001,Landelies
+16295001,Benestare
+16300001,St. Ives
+16305001,Armstrong
+16310001,Roksem
+16315001,Gattatico
+16320001,Chiguayante
+16325001,Estevan
+16330001,Honolulu
+16335001,Alnwick
+16340001,Galvarino
+16345001,Pilibhit
+16350001,Salerno
+16355001,Tulita
+16360001,Castletown
+16365001,Yeovil
+16370001,Villers-aux-Tours
+16375001,Terzorio
+16380001,Langen
+16385001,Billings
+16390001,Heerhugowaard
+16395001,Sogliano Cavour
+16400001,Campotosto
+16405001,Bossire
+16410001,Vitacura
+16415001,Ficulle
+16420001,FerriŽres
+16425001,Medea
+16430001,Turnhout
+16435001,Bolzano Vicentino
+16440001,Lasnigo
+16445001,Santo Domingo
+16450001,Bochum
+16455001,Cap-Saint-Ignace
+16460001,Gijzelbrechtegem
+16465001,Jupille-sur-Meuse
+16470001,Gmunden
+16475001,Sint-Kruis
+16480001,Scena/Schenna
+16485001,Jumet
+16490001,Genval
+16495001,Sainte-Ode
+16500001,Catemu
+16505001,Boulogne-sur-Mer
+16510001,Petrópolis
+16515001,Pembroke
+16520001,Moignelee
+16525001,Bochum
+16530001,Bensheim
+16535001,Dessel
+16540001,Saskatoon
+16545001,Schwedt
+16550001,Baiso
+16555001,Carnoustie
+16560001,New Bombay
+16565001,Harlingen
+16570001,Salt Spring Island
+16575001,Wetzlar
+16580001,Kingussie
+16585001,Valparaíso de Goiás
+16590001,Chiusa Sclafani
+16595001,Brodick
+16600001,Villers-la-Ville
+16605001,Marchtrenk
+16610001,Wieze
+16615001,Retie
+16620001,San Felipe
+16625001,Chillán Viejo
+16630001,Dignano
+16635001,Chantemelle
+16640001,Caplan
+16645001,Heerlen
+16650001,Yamuna Nagar
+16655001,Saint-Pierre
+16660001,San Cristóbal de la Laguna
+16665001,Assen
+16670001,Picture Butte
+16675001,Amersfoort
+16680001,Mersin
+16685001,Lowell
+16690001,Florenville
+16695001,Scunthorpe
+16700001,Ahrensburg
+16705001,New Haven
+16710001,Oyace
+16715001,Tarsus
+16720001,Terni
+16725001,Canterbury
+16730001,Penhold
+16735001,Oldenburg
+16740001,Tregaron
+16745001,Rothes
+16750001,Morro d'Alba
+16755001,Aurora
+16760001,Isnes
+16765001,Monceau-Imbrechies
+16770001,Hattem
+16775001,Crewe
+16780001,Alexandra
+16785001,Zutphen
+16790001,Saint-Martin
+16795001,Toronto
+16800001,Sint-Joost-ten-Node
+16805001,Thorembais-Saint-Trond
+16810001,FerriŽres
+16815001,Emarèse
+16820001,Colorado Springs
+16825001,Montes Claros
+16830001,Saint-Remy
+16835001,San Clemente
+16840001,Woutersbrakel
+16845001,Dunoon
+16850001,Erie
+16855001,Hudson's Hope
+16860001,Ghislarengo
+16865001,Sunshine Coast Regional District
+16870001,Quickborn
+16875001,Dos Hermanas
+16880001,Galway
+16885001,Salvirola
+16890001,Napoli
+16895001,Newtown
+16900001,Kungälv
+16905001,Chartres
+16910001,Hérouville-Saint-Clair
+16915001,Saint-Urbain
+16920001,Langford
+16925001,Vito d'Asio
+16930001,Tranent
+16935001,Pelotas
+16940001,Banchory
+16945001,Boussu-lez-Walcourt
+16950001,Stamford
+16955001,Gelbressee
+16960001,Hattiesburg
+16965001,Wommelgem
+16970001,Mira Bhayandar
+16975001,Gaggio Montano
+16980001,Scandriglia
+16985001,Warspite
+16990001,Geraldton-Greenough
+16995001,Gandhinagar
+17000001,Salamanca
+17005001,Recoleta
+17010001,Ham-sur-Sambre
+17015001,Hualqui
+17020001,Meißen
+17025001,Pace del Mela
+17030001,Penrith
+17035001,Dornbirn
+17040001,Ajaccio
+17045001,Quellón
+17050001,Bruderheim
+17055001,Louth
+17060001,Vergnies
+17065001,Poggiodomo
+17070001,Guadalupe
+17075001,Gandhidham
+17080001,Zaragoza
+17085001,Ongole
+17090001,Montefalcone nel Sannio
+17095001,Istres
+17100001,Guaitecas
+17105001,Colina
+17110001,Varsenare
+17115001,Owen Sound
+17120001,Massimino
+17125001,Mogliano
+17130001,Le Grand-Quevilly
+17135001,Southaven
+17140001,Ashoknagar-Kalyangarh
+17145001,Casalbuono
+17150001,Melilla
+17155001,Cochamó
+17160001,Gorzów Wielkopolski
+17165001,Placanica
+17170001,Curacaví
+17175001,Ñiquén
+17180001,Newtown
+17185001,Nässjö
+17190001,Donk
+17195001,Landeck
+17200001,Ripalta Guerina
+17205001,North Battleford
+17210001,Lambusart
+17215001,Wardin
+17220001,Ottawa
+17225001,Lisieux
+17230001,Rocca d'Arce
+17235001,Wanganui
+17240001,Kieldrecht
+17245001,Dos Hermanas
+17250001,Vaux-sous-ChŽvremont
+17255001,Abbeville
+17260001,Meeuwen
+17265001,Calestano
+17270001,Te Awamutu
+17275001,Millet
+17280001,Aisemont
+17285001,Landau
+17290001,Filey
+17295001,Wals-Siezenheim
+17300001,Pellezzano
+17305001,Isca sullo Ionio
+17310001,Bojano
+17315001,Eckville
+17320001,Limena
+17325001,Hamme
+17330001,Gagliato
+17335001,Ophoven
+17340001,Bologna
+17345001,Heusweiler
+17350001,Vauda Canavese
+17355001,Roubaix
+17360001,Yaxley
+17365001,Sant'Egidio del Monte Albino
+17370001,Ratlam
+17375001,Uddevalla
+17380001,Bally
+17385001,Shahjahanpur
+17390001,Sanzeno
+17395001,Wörgl
+17400001,Hollange
+17405001,Chandler
+17410001,Arsoli
+17415001,Naarden
+17420001,Birmingham
+17425001,Tavigny
+17430001,Salice Salentino
+17435001,Jamioulx
+17440001,Campli
+17445001,Ramskapelle
+17450001,São José dos Pinhais
+17455001,Bansberia
+17460001,Niel-bij-As
+17465001,Cras-Avernas
+17470001,Chieti
+17475001,Husum
+17480001,Rotem
+17485001,Pelotas
+17490001,Chichester
+17495001,Vreren
+17500001,New Quay
+17505001,Cap-Rouge
+17510001,Falmouth
+17515001,Seilles
+17520001,Maracanaú
+17525001,Penrith
+17530001,Fontaine-Valmont
+17535001,Bridgend
+17540001,Leuze
+17545001,Puerto Octay
+17550001,Washington
+17555001,Eyemouth
+17560001,Laon
+17565001,Łódź
+17570001,Lenna
+17575001,Contulmo
+17580001,Ways
+17585001,Torquay
+17590001,Belmont
+17595001,Patos
+17600001,Purranque
+17605001,Pironchamps
+17610001,Grand Island
+17615001,Ruette
+17620001,Westlock
+17625001,Wunstorf
+17630001,Freux
+17635001,Gulfport
+17640001,Villafranca d'Asti
+17645001,Castel Baronia
+17650001,Vidisha
+17655001,Dave
+17660001,Zaltbommel
+17665001,Stafford
+17670001,Carunchio
+17675001,Blairgowrie
+17680001,Campomarino
+17685001,Pitlochry
+17690001,Bhiwandi
+17695001,Stratford
+17700001,South Portland
+17705001,Balvano
+17710001,Vijayawada
+17715001,Westkapelle
+17720001,Lincoln
+17725001,Concón
+17730001,Barra do Corda
+17735001,Ansfelden
+17740001,Kırıkhan
+17745001,Nordhorn
+17750001,Korbach
+17755001,Aurora
+17760001,Fallo
+17765001,San Vicente
+17770001,Kirkland
+17775001,Crehen
+17780001,Whitchurch-Stouffville
+17785001,Crystal Springs
+17790001,Hennigsdorf
+17795001,St. Paul
+17800001,Sint-Martens-Bodegem
+17805001,Höchst
+17810001,Lens-Saint-Remy
+17815001,Villafranca in Lunigiana
+17820001,Awka
+17825001,Hollogne-sur-Geer
+17830001,Barmouth
+17835001,Launceston
+17840001,Latour
+17845001,Conselice
+17850001,Montauban
+17855001,Ligney
+17860001,Booischot
+17865001,Stoke-on-Trent
+17870001,İslahiye
+17875001,Tierra Amarilla
+17880001,Ganshoren
+17885001,Kirkintilloch
+17890001,Auburn
+17895001,Lanark
+17900001,Frankenthal
+17905001,Regensburg
+17910001,Hope
+17915001,Heerhugowaard
+17920001,Driffield
+17925001,Chandler
+17930001,Anthisnes
+17935001,Ciudad Real
+17940001,Meeuwen
+17945001,Beaumont
+17950001,Evere
+17955001,Wolfsberg
+17960001,Frankston
+17965001,Heusden
+17970001,Steenokkerzeel
+17975001,Nazilli
+17980001,As
+17985001,Branchon
+17990001,Perugia
+17995001,Saint-Brieuc
+18000001,Hamoir
+18005001,Northampton
+18010001,Wedel
+18015001,Borgone Susa
+18020001,Quarona
+18025001,Noduwez
+18030001,Carapicuíba
+18035001,Bionaz
+18040001,Curacautín
+18045001,Castel Ritaldi
+18050001,Chiguayante
+18055001,Aurangabad
+18060001,Bergen
+18065001,Meduno
+18070001,Bitterfeld-Wolfen
+18075001,Breton
+18080001,Zoetermeer
+18085001,Germersheim
+18090001,Koekelberg
+18095001,Enschede
+18100001,Todi
+18105001,Częstochowa
+18110001,Salvirola
+18115001,Kearney
+18120001,Nivelles
+18125001,Nurdağı
+18130001,Muiden
+18135001,Verdun
+18140001,Sevilla
+18145001,Peumo
+18150001,Felitto
+18155001,Tenali
+18160001,Valladolid
+18165001,Satriano di Lucania
+18170001,Woodstock
+18175001,Sellano
+18180001,Boneffe
+18185001,Dalkeith
+18190001,Khammam
+18195001,Tucapel
+18200001,Saint John
+18205001,Frascati
+18210001,Houffalize
+18215001,ZŽtrud-Lumay
+18220001,Chiusa Sclafani
+18225001,Hugli-Chinsurah
+18230001,Brussel X-Luchthaven Remailing
+18235001,Armento
+18240001,Ely
+18245001,Calera
+18250001,Cabrero
+18255001,Albany
+18260001,The Hague
+18265001,Francavilla Fontana
+18270001,Recoleta
+18275001,Bhubaneswar
+18280001,Sargodha
+18285001,Bocchigliero
+18290001,Hollange
+18295001,Trinità d'Agultu e Vignola
+18300001,Hattem
+18305001,Cardedu
+18310001,Rock Springs
+18315001,Kermt
+18320001,Aix-en-Provence
+18325001,Latinne
+18330001,Burg
+18335001,Dion-Valmont
+18340001,Parrano
+18345001,Sioux City
+18350001,Lucknow
+18355001,Squillace
+18360001,Navidad
+18365001,Bottidda
+18370001,Gespeg
+18375001,Bad Homburg v. d. Höhe
+18380001,Aserrí
+18385001,Gavorrano
+18390001,Creil
+18395001,Río Hurtado
+18400001,Saint-Denis
+18405001,Blenheim
+18410001,Mollem
+18415001,Norfolk County
+18420001,Gdańsk
+18425001,Wha Ti
+18430001,Frasnes-lez-Gosselies
+18435001,Vernon
+18440001,Mattersburg
+18445001,Appleby
+18450001,Thorold
+18455001,Gaasbeek
+18460001,Rimouski
+18465001,Kampenhout
+18470001,Radicofani
+18475001,Balen
+18480001,Castlegar
+18485001,Huntingdon
+18490001,Arviat
+18495001,Fraser Lake
+18500001,Québec City
+18505001,Viano
+18510001,Meeuwen
+18515001,Birori
+18520001,Fort Worth
+18525001,Kanpur
+18530001,Sibret
+18535001,Okigwe
+18540001,Gouy-lez-PiŽton
+18545001,Fraser-Fort George
+18550001,Saint-Prime
+18555001,Montemilone
+18560001,Evesham
+18565001,Fogliano Redipuglia
+18570001,Bremen
+18575001,Alexandra
+18580001,Tullibody
+18585001,Provost
+18590001,Fatehpur
+18595001,Cap-Saint-Ignace
+18600001,Köln
+18605001,Moerzeke
+18610001,Bussolengo
+18615001,Feldkirchen in Kärnten
+18620001,Glain
+18625001,Nazilli
+18630001,Río Bueno
+18635001,Priolo Gargallo
+18640001,Coihueco
+18645001,Ham-sur-Heure-Nalinnes
+18650001,Capannori
+18655001,Sherborne
+18660001,Lauco
+18665001,Gbongan
+18670001,Burns Lake
+18675001,Porto Cesareo
+18680001,As
+18685001,Lede
+18690001,Virelles
+18695001,Arica
+18700001,Sant'Eufemia a Maiella
+18705001,Beverlo
+18710001,Warrnambool
+18715001,Isnes
+18720001,Penhold
+18725001,Luik
+18730001,l'Ecluse
+18735001,Castelvetere in Val Fortore
+18740001,Treppo Carnico
+18745001,Lorient
+18750001,Colorado Springs
+18755001,Lambusart
+18760001,Attert
+18765001,Eschwege
+18770001,Mobile
+18775001,Maranello
+18780001,San Javier
+18785001,Londerzeel
+18790001,Fayetteville
+18795001,Vöcklabruck
+18800001,Saint-LŽger
+18805001,Torgny
+18810001,Wals-Siezenheim
+18815001,Solre-Saint-GŽry
+18820001,Segovia
+18825001,Orlando
+18830001,Umbertide
+18835001,Dunfermline
+18840001,Mont-Saint-Guibert
+18845001,San Rafael
+18850001,Episcopia
+18855001,Dave
+18860001,Jandrain-Jandrenouille
+18865001,Iseyin
+18870001,Falisolle
+18875001,Baulers
+18880001,East Linton
+18885001,Alphen aan den Rijn
+18890001,Aubagne
+18895001,New Westminster
+18900001,Collinas
+18905001,Bosa
+18910001,Little Rock
+18915001,Vigo
+18920001,San Damiano al Colle
+18925001,Leut
+18930001,Borgerhout
+18935001,Campbellton
+18940001,St. Paul
+18945001,Kozan
+18950001,Tramonti di Sopra
+18955001,Paularo
+18960001,Bourlers
+18965001,Ingooigem
+18970001,Cambridge Bay
+18975001,Thurso
+18980001,Bilaspur
+18985001,Greater Sudbury
+18990001,Secunderabad
+18995001,Tiverton
+19000001,Rycroft
+19005001,Massello
+19010001,Hereford
+19015001,Felitto
+19020001,Cholchol
+19025001,Sint-Kwintens-Lennik
+19030001,Namen
+19035001,Marseille
+19040001,Carovilli
+19045001,Callander
+19050001,Molenbeersel
+19055001,Vanderhoof
+19060001,Brive-la-Gaillarde
+19065001,Nieuwkapelle
+19070001,Glimes
+19075001,Idar-Oberstei
+19080001,Diegem
+19085001,Baltasound
+19090001,Avadi
+19095001,Kahramanmaraş
+19100001,Udaipur
+19105001,Bovigny
+19110001,Combarbalá
+19115001,Saintes
+19120001,Troyes
+19125001,Manoppello
+19130001,Hove
+19135001,Ruthin
+19140001,Tontelange
+19145001,Burg
+19150001,Dessel
+19155001,Wanaka
+19160001,Neu-Ulm
+19165001,Lac Ste. Anne
+19170001,Holyhead
+19175001,Banda
+19180001,Red Deer
+19185001,Aligarh
+19190001,San Pedro
+19195001,Susegana
+19200001,Olsztyn
+19205001,Meux
+19210001,Pont-de-Loup
+19215001,Mezzana
+19220001,Lauro de Freitas
+19225001,Saint-Marc
+19230001,Stendal
+19235001,Isle-aux-Coudres
+19240001,Stratford-upon-Avon
+19245001,Bellegem
+19250001,Mazzano Romano
+19255001,Opgrimbie
+19260001,Altamura
+19265001,Vijayawada
+19270001,La Spezia
+19275001,Santander
+19280001,Pogliano Milanese
+19285001,Chemnitz
+19290001,Mersin
+19295001,Casablanca
+19300001,Malbaie
+19305001,Salcito
+19310001,Batiscan
+19315001,Kamalia
+19320001,Guirsch
+19325001,Forbach
+19330001,Caruaru
+19335001,St. Andrä
+19340001,Hassan
+19345001,Itterbeek
+19350001,Güstrow
+19355001,Noragugume
+19360001,Machilipatnam
+19365001,Eberswalde-Finow
+19370001,Culemborg
+19375001,Ledeberg
+19380001,Gaya
+19385001,Latur
+19390001,Leiden
+19395001,Pointe-du-Lac
+19400001,Doues
+19405001,Dordrecht
+19410001,Melton
+19415001,Bruck an der Mur
+19420001,Rastatt
+19425001,Romano d'Ezzelino
+19430001,Esneux
+19435001,Pabianice
+19440001,Denny
+19445001,Sahiwal
+19450001,Lewiston
+19455001,Loreto
+19460001,Millport
+19465001,Viggiano
+19470001,Columbus
+19475001,Hyderabad
+19480001,Poole
+19485001,Mazy
+19490001,Reggio nell'Emilia
+19495001,Ferrandina
+19500001,Bouwel
+19505001,Forchtenstein
+19510001,Widooie
+19515001,Ruvo del Monte
+19520001,Chieti
+19525001,Mechelen-aan-de-Maas
+19530001,Worksop
+19535001,Strathcona County
+19540001,Stourbridge
+19545001,Nizip
+19550001,Silchar
+19555001,Gressoney-Saint-Jean
+19560001,Notre-Dame-du-Nord
+19565001,Muradiye
+19570001,Bulandshahr
+19575001,Widooie
+19580001,Ponte nelle Alpi
+19585001,Wanaka
+19590001,De Klinge
+19595001,Nuragus
+19600001,Olathe
+19605001,Newquay
+19610001,Castel San Niccolò
+19615001,Grande Cache
+19620001,Bellingen
+19625001,Rio Grande
+19630001,Sandy
+19635001,Limal
+19640001,Golspie
+19645001,Buckingham
+19650001,Oud-Turnhout
+19655001,Hamme
+19660001,Mackay
+19665001,Knokke
+19670001,Castel Ritaldi
+19675001,Huasco
+19680001,Hastings
+19685001,Coihueco
+19690001,Chittoor
+19695001,Coventry
+19700001,Ipswich
+19705001,Eyemouth
+19710001,Pichidegua
+19715001,Palagianello
+19720001,Rhisnes
+19725001,Rotterdam
+19730001,Salzburg
+19735001,Sinaai-Waas
+19740001,Sulzano
+19745001,Brugge Bruges
+19750001,Ledeberg
+19755001,Froidchapelle
+19760001,Levin
+19765001,Orosei
+19770001,Bala
+19775001,Saint Louis
+19780001,Gaggio Montano
+19785001,Sheikhupura
+19790001,Sitapur
+19795001,Porretta Terme
+19800001,Opheylissem
+19805001,Aurillac
+19810001,Sint-Pieters-Kapelle
+19815001,Ipswich
+19820001,Moose Jaw
+19825001,Puyehue
+19830001,Santa Rita
+19835001,Buckie
+19840001,Neuville-en-Condroz
+19845001,Gijzegem
+19850001,Parral
+19855001,Trivandrum
+19860001,La Baie
+19865001,Torino
+19870001,Campochiaro
+19875001,Maracanaú
+19880001,Sant'Agapito
+19885001,Wabamun
+19890001,Klemskerke
+19895001,Guwahati
+19900001,Abergele
+19905001,Recco
+19910001,Beringen
+19915001,Villers-le-Peuplier
+19920001,Eckernförde
+19925001,Rouen
+19930001,Hohen Neuendorf
+19935001,Hertford
+19940001,Perk
+19945001,Baracaldo
+19950001,Maranguape
+19955001,Kitimat
+19960001,Tione di Trento
+19965001,Hualaihué
+19970001,Richmond Hill
+19975001,Lustenau
+19980001,Latour
+19985001,Ashbourne
+19990001,Bellingen
+19995001,Dhule
+20000001,Gouda
+20005001,Balfour
+20010001,Acquasparta
+20015001,Bogaarden
+20020001,Schagen
+20025001,Builth Wells
+20030001,Spoleto
+20035001,Valenciennes
+20040001,Hunstanton
+20045001,LiŽge
+20050001,Soissons
+20055001,Zaffelare
+20060001,Medicine Hat
+20065001,Courcelles
+20070001,Rossignol
+20075001,Cinco Esquinas
+20080001,Sint-Agatha-Berchem
+20085001,Peterborough
+20090001,Neunkirchen
+20095001,Worksop
+20100001,Santomenna
+20105001,Gandhidham
+20110001,Carluke
+20115001,Wolverhampton
+20120001,Warwick
+20125001,Lot
+20130001,San Mauro Marchesato
+20135001,Almería
+20140001,San Javier
+20145001,Socchieve
+20150001,Livo
+20155001,Moncton
+20160001,Filignano
+20165001,João Pessoa
+20170001,Yeotmal
+20175001,Burgos
+20180001,Geertruidenberg
+20185001,Caloundra
+20190001,Wunstorf
+20195001,Parauapebas
+20200001,Columbia
+20205001,Marche-les-Dames
+20210001,Dreieich
+20215001,Kumluca
+20220001,Herenthout
+20225001,Tourcoing
+20230001,Shipshaw
+20235001,Hull
+20240001,Oamaru
+20245001,Talagante
+20250001,Berg
+20255001,Viano
+20260001,La Seyne-sur-Mer
+20265001,Thisnes
+20270001,Narbonne
+20275001,Gatineau
+20280001,Turnhout
+20285001,East Linton
+20290001,Eghezee
+20295001,Hollogne-sur-Geer
+20300001,Konin
+20305001,Berwick-upon-Tweed
+20310001,Alandur
+20315001,Centa San Nicolò
+20320001,Guben
+20325001,Meerhout
+20330001,Vrasene
+20335001,Haguenau
+20340001,Randazzo
+20345001,Ferrere
+20350001,Colmar
+20355001,Mornimont
+20360001,Landau
+20365001,Canterbury
+20370001,María Pinto
+20375001,Legal
+20380001,Edinburgh
+20385001,Sautin
+20390001,Calera de Tango
+20395001,San Fabián
+20400001,Jodhpur
+20405001,Township of Minden Hills
+20410001,Vallentuna
+20415001,Durg
+20420001,Abergavenny
+20425001,Houdemont
+20430001,Bastogne
+20435001,Bedollo
+20440001,Campbellton
+20445001,Saguenay
+20450001,Tay
+20455001,Lanester
+20460001,Sint-Gillis
+20465001,Ourense
+20470001,Ulhasnagar
+20475001,Zelzate
+20480001,Challand-Saint-Victor
+20485001,Nogales
+20490001,Bersillies-l'Abbaye
+20495001,Imphal
+20500001,Long Eaton
+20505001,Vaux-sur-Sure
+20510001,Diano Arentino
+20515001,Felixstowe
+20520001,Santander
+20525001,Ospedaletto d'Alpinolo
+20530001,Brecon
+20535001,Srinagar
+20540001,Aachen
+20545001,Minitonas
+20550001,Mannheim
+20555001,Morkhoven
+20560001,Guadalajara
+20565001,Saint-Nicolas
+20570001,Güstrow
+20575001,Lecce
+20580001,Matera
+20585001,Roux-Miroir
+20590001,Solre-sur-Sambre
+20595001,Hamme
+20600001,Burgos
+20605001,Guadalupe
+20610001,Cabras
+20615001,Llangefni
+20620001,Runcorn
+20625001,Clackmannan
+20630001,Mogliano
+20635001,Bellevue
+20640001,Mazzano Romano
+20645001,Tirunelveli
+20650001,Alexandra
+20655001,Montes Claros
+20660001,Reinbek
+20665001,Oetingen
+20670001,Weißenfels
+20675001,Juseret
+20680001,Trois-Rivières
+20685001,Cannes
+20690001,Tuscaloosa
+20695001,Queilén
+20700001,Longaví
+20705001,Hachy
+20710001,Salt Lake City
+20715001,Grosseto
+20720001,Sadiqabad
+20725001,Idar-Oberstei
+20730001,Luzzara
+20735001,Lugo
+20740001,Drumheller
+20745001,Lodelinsart
+20750001,Treglio
+20755001,Villach
+20760001,Weelde
+20765001,Roux-Miroir
+20770001,Retford
+20775001,Westende
+20780001,Camrose
+20785001,Sint-Niklaas
+20790001,Kenosha
+20795001,Invercargill
+20800001,Midway
+20805001,Pathankot
+20810001,Pessac
+20815001,Onitsha
+20820001,Lokeren
+20825001,Jelenia Góra
+20830001,Collecchio
+20835001,Collecchio
+20840001,Thorn
+20845001,Villa Agnedo
+20850001,San Pedro
+20855001,Rodì Milici
+20860001,Orhangazi
+20865001,Portland
+20870001,Vichuquén
+20875001,Vichte
+20880001,Villers-Poterie
+20885001,Canora
+20890001,Heide
+20895001,Seloignes
+20900001,Fontanafredda
+20905001,Chastre-Villeroux-Blanmont
+20910001,Rivire
+20915001,Acquedolci
+20920001,Paradise
+20925001,Rigolet
+20930001,Rignano Garganico
+20935001,Pelago
+20940001,Gold Coast
+20945001,María Pinto
+20950001,Saint-Denis
+20955001,Ancarano
+20960001,Otegem
+20965001,The Hague
+20970001,Halle
+20975001,Chepstow
+20980001,Riesa
+20985001,Gondiya
+20990001,Bromyard
+20995001,Pathankot
+21000001,Itterbeek
+21005001,Colbún
+21010001,Colli a Volturno
+21015001,Laarne
+21020001,Jabbeke
+21025001,Cagli
+21030001,Palermo
+21035001,Parkland County
+21040001,Castelluccio Inferiore
+21045001,Ansfelden
+21050001,Moorsel
+21055001,Lutterworth
+21060001,Hornsea
+21065001,Plainevaux
+21070001,Curacaví
+21075001,Bevilacqua
+21080001,Bergen
+21085001,Siculiana
+21090001,Cinisi
+21095001,Castelnovo del Friuli
+21100001,Wadgassen
+21105001,Püttlingen
+21110001,Hawick
+21115001,Solapur
+21120001,Lethbridge
+21125001,Angleur
+21130001,Moorsel
+21135001,Cervinara
+21140001,Rio de Janeiro
+21145001,Hazaribag
+21150001,Roosendaal
+21155001,Morolo
+21160001,Elmshorn
+21165001,Białystok
+21170001,Leuze
+21175001,Leominster
+21180001,Finspång
+21185001,Campbeltown
+21190001,Rijkevorsel
+21195001,Bard
+21200001,Hubli
+21205001,Girifalco
+21210001,Chichester
+21215001,Stalhille
+21220001,Cunco
+21225001,Chilliwack
+21230001,Kircudbright
+21235001,Montes Claros
+21240001,Afsnee
+21245001,Avelgem
+21250001,Auxerre
+21255001,Leut
+21260001,Hastings
+21265001,Hunstanton
+21270001,Altmünster
+21275001,North Dum Dum
+21280001,Halifax
+21285001,Graven Grez-Doiceau
+21290001,Samsun
+21295001,Quillón
+21300001,Delft
+21305001,Zerba
+21310001,Namen
+21315001,Hay River
+21320001,Rimouski
+21325001,Pointe-aux-Trembles
+21330001,Stranraer
+21335001,Sasaram
+21340001,Friedberg
+21345001,Antuco
+21350001,Ucluelet
+21355001,Mönchengladbach
+21360001,Putre
+21365001,Baden
+21370001,Schwedt
+21375001,Aosta
+21380001,Bordeaux
+21385001,Innisfail
+21390001,Pointe-aux-Trembles
+21395001,Saint-Nazaire
+21400001,Tubeke Tubize
+21405001,Ham-sur-Heure
+21410001,Winchester
+21415001,Curridabat
+21420001,Crowsnest Pass
+21425001,Buckley
+21430001,Werbomont
+21435001,Tiruvarur
+21440001,Sioux City
+21445001,Wardha
+21450001,Brest
+21455001,Warwick
+21460001,RosiŽres
+21465001,Orciano Pisano
+21470001,Hildesheim
+21475001,Jalgaon
+21480001,Hody
+21485001,Hagen
+21490001,Sant'Agata sul Santerno
+21495001,Treglio
+21500001,Les Bulles
+21505001,Baton Rouge
+21510001,Hamoir
+21515001,Ávila
+21520001,Monteu Roero
+21525001,Clovenfords
+21530001,Tranent
+21535001,Friedrichsdorf
+21540001,Millet
+21545001,Ruda
+21550001,Joondalup
+21555001,Nieuwkerken-Waas
+21560001,Vito d'Asio
+21565001,Empoli
+21570001,Kumluca
+21575001,Dorgali
+21580001,Westende
+21585001,s Herenelderen
+21590001,San Luca
+21595001,Valparai
+21600001,Sigillo
+21605001,Stockholm
+21610001,Corvino San Quirico
+21615001,Vlimmeren
+21620001,Thuin
+21625001,Anderlues
+21630001,Calle Blancos
+21635001,Hemel Hempstead
+21640001,Waasmunster
+21645001,Newmarket
+21650001,Priero
+21655001,Bragança
+21660001,Ramara
+21665001,Arquata del Tronto
+21670001,Oostkamp
+21675001,Diego de Almagro
+21680001,Gondiya
+21685001,Gignod
+21690001,Asnières-sur-Seine
+21695001,Quellón
+21700001,Rhyl
+21705001,Proddatur
+21710001,Sant'Eusanio Forconese
+21715001,Maringá
+21720001,Portland
+21725001,Bellevue
+21730001,Koszalin
+21735001,Ostellato
+21740001,New Westminster
+21745001,Sagrada Familia
+21750001,Monceau-Imbrechies
+21755001,Hattem
+21760001,Baasrode
+21765001,Salerno
+21770001,İmamoğlu
+21775001,Oteppe
+21780001,Bicester
+21785001,Warisoulx
+21790001,Evere
+21795001,Arnesano
+21800001,Baasrode
+21805001,Centa San Nicolò
+21810001,Lonzee
+21815001,Portofino
+21820001,VTM
+21825001,Maglie
+21830001,Villers-la-Ville
+21835001,Pugwash
+21840001,Osorno
+21845001,Burdinne
+21850001,Arendonk
+21855001,Bonlez
+21860001,Sandy
+21865001,Ayas
+21870001,Wierde
+21875001,Saint-Pierre
+21880001,Máfil
+21885001,Ancarano
+21890001,Sint-Renelde Saintes
+21895001,Saint Louis
+21900001,Sepino
+21905001,Kapiti
+21910001,Aulnay-sous-Bois
+21915001,GrivegnŽe
+21920001,Quellón
+21925001,Houston
+21930001,Vottem
+21935001,Orvieto
+21940001,HŽvillers
+21945001,Huntley
+21950001,Giugliano in Campania
+21955001,Boulogne-sur-Mer
+21960001,San Felipe
+21965001,Firenze
+21970001,Sagar
+21975001,Logan City
+21980001,Martello/Martell
+21985001,Fortaleza
+21990001,Monghidoro
+21995001,Whitby
+22000001,LouveignŽ
+22005001,Padre las Casas
+22010001,Courcelles
+22015001,Wilskerke
+22020001,Whitby
+22025001,Fortaleza
+22030001,Posina
+22035001,Neerharen
+22040001,Dilbeek
+22045001,Rothes
+22050001,King Township
+22055001,Oria
+22060001,Campolieto
+22065001,Rennes
+22070001,Invercargill
+22075001,Macul
+22080001,San Juan de Dios
+22085001,Florida
+22090001,Sant'Elpidio a Mare
+22095001,San Antonio
+22100001,Temuco
+22105001,Bharatpur
+22110001,Karnal
+22115001,Maubeuge
+22120001,Pictou
+22125001,Naperville
+22130001,Chiusa/Klausen
+22135001,Kakinada
+22140001,Worms
+22145001,Weston-super-Mare
+22150001,Piegaro
+22155001,Sanluri
+22160001,Bludenz
+22165001,San José de Maipo
+22170001,Bastogne
+22175001,Schwäbisch Gmünd
+22180001,Vergnies
+22185001,Precenicco
+22190001,Pieve di Cadore
+22195001,Ambala Sadar
+22200001,Oldenzaal
+22205001,Gasteiz
+22210001,Colomiers
+22215001,Grand Rapids
+22220001,Columbia
+22225001,Uberlândia
+22230001,Sandy
+22235001,Castello dell'Acqua
+22240001,Oosterhout
+22245001,Götzis
+22250001,Banbury
+22255001,Cuenca
+22260001,Belgrade
+22265001,Humbeek
+22270001,Codigoro
+22275001,Constitución
+22280001,Schwerin
+22285001,Lörrach
+22290001,Beez
+22295001,Renfrew
+22300001,Lusevera
+22305001,Douai
+22310001,Laives/Leifers
+22315001,Panguipulli
+22320001,Spijkenisse
+22325001,Urbe
+22330001,San Marcello
+22335001,Çeşme
+22340001,Klagenfurt
+22345001,Palencia
+22350001,Máfil
+22355001,Knittelfeld
+22360001,Le Cannet
+22365001,Laces/Latsch
+22370001,Brisbane
+22375001,Dorval
+22380001,Civitacampomarano
+22385001,East Gwillimbury
+22390001,Stade
+22395001,Bexbach
+22400001,Trier
+22405001,Ancaster Town
+22410001,Ujjain
+22415001,Wels
+22420001,Sepino
+22425001,Rugby
+22430001,Çermik
+22435001,Tribogna
+22440001,Moustier-sur-Sambre
+22445001,Vespolate
+22450001,Saint-Georges
+22455001,Newport
+22460001,Omaha
+22465001,Quellón
+22470001,Aurora
+22475001,Benestare
+22480001,Katsina
+22485001,Montemilone
+22490001,Fallo
+22495001,Gifhorn
+22500001,Wechelderzande
+22505001,Renfrew
+22510001,Chestermere
+22515001,Jammu
+22520001,Barra do Corda
+22525001,Nieuwegein
+22530001,Ikot Ekpene
+22535001,Stroud
+22540001,Sommariva Perno
+22545001,Castiglione del Lago
+22550001,Roermond
+22555001,Stornaway
+22560001,Sierra Gorda
+22565001,Pietracatella
+22570001,San Giacomo degli Schiavoni
+22575001,Genappe
+22580001,Etroubles
+22585001,Pinkafeld
+22590001,Crieff
+22595001,Neyveli
+22600001,Altmünster
+22605001,Watford
+22610001,La Florida
+22615001,Pinkafeld
+22620001,Roksem
+22625001,Premeno
+22630001,Hindupur
+22635001,Bischofshofen
+22640001,Kemzeke
+22645001,Béziers
+22650001,Kington
+22655001,Blairgowrie
+22660001,Whithorn
+22665001,Rijkevorsel
+22670001,Meix-le-Tige
+22675001,Logan City
+22680001,Sioux City
+22685001,Keumiee
+22690001,Sant'Elena
+22695001,Oosterhout
+22700001,Bonnert
+22705001,Las Palmas
+22710001,Lucknow
+22715001,Cromer
+22720001,Purulia
+22725001,Nazilli
+22730001,Lac La Biche County
+22735001,Bergeggi
+22740001,Tarnów
+22745001,Montgomery
+22750001,Vitória da Conquista
+22755001,Heerenveen
+22760001,Balıkesir
+22765001,Queanbeyan
+22770001,Gistel
+22775001,Jundiaí
+22780001,Selkirk
+22785001,Neufeld an der Leitha
+22790001,Dolgellau
+22795001,Aliano
+22800001,Camporotondo di Fiastrone
+22805001,Montone
+22810001,San Rafael
+22815001,Haßloch
+22820001,Melrose
+22825001,Baschi
+22830001,Destelbergen
+22835001,Florida
+22840001,Pietragalla
+22845001,Oranienburg
+22850001,Lanco
+22855001,Newquay
+22860001,Termes
+22865001,Stade
+22870001,Kamarhati
+22875001,Houtave
+22880001,Schwerin
+22885001,Lompret
+22890001,Haasdonk
+22895001,Saint-Lô
+22900001,Muzaffarnagar
+22905001,Burhanpur
+22910001,Greenock
+22915001,Piegaro
+22920001,Cirencester
+22925001,Fernie
+22930001,Quilpué
+22935001,San Pablo
+22940001,San Miguel
+22945001,Brahmapur
+22950001,Vlimmeren
+22955001,Hervey Bay
+22960001,Carnoustie
+22965001,Monfumo
+22970001,Racine
+22975001,Loreto
+22980001,Ghlin
+22985001,Kollam
+22990001,La Seyne-sur-Mer
+22995001,Moerbeke
+23000001,Los Sauces
+23005001,Zwevegem
+23010001,Golspie
+23015001,Selkirk
+23020001,Blairgowrie
+23025001,Bedford
+23030001,Maintal
+23035001,Arrone
+23040001,Millport
+23045001,Leeds
+23050001,Saint-Marcel
+23055001,Essex
+23060001,Coquitlam
+23065001,Reutlingen
+23070001,Sherbrooke
+23075001,Squillace
+23080001,Portree
+23085001,Fernie
+23090001,Blenheim
+23095001,Val Rezzo
+23100001,León
+23105001,Flin Flon
+23110001,Oklahoma City
+23115001,Uluberia
+23120001,Essene
+23125001,Glovertown
+23130001,Ramillies
+23135001,Huissen
+23140001,Chester
+23145001,LiŽge
+23150001,Chambave
+23155001,Cassano Spinola
+23160001,Toowoomba
+23165001,Kisi
+23170001,Cortil-Noirmont
+23175001,Bromley
+23180001,Şereflikoçhisar
+23185001,Gudivada
+23190001,Tintange
+23195001,Reutlingen
+23200001,Norman Wells
+23205001,Cras-Avernas
+23210001,Jennersdorf
+23215001,Gijón
+23220001,Alken
+23225001,Saint-Malo
+23230001,Neustrelitz
+23235001,Mysore
+23240001,Merzig
+23245001,Neu-Isenburg
+23250001,Maser
+23255001,Soissons
+23260001,Hamoir
+23265001,Gentbrugge
+23270001,Bazel
+23275001,Mignanego
+23280001,Vorst
+23285001,Sint-Kruis-Winkel
+23290001,Montes Claros
+23295001,Bragança
+23300001,Siddi
+23305001,Cambridge
+23310001,Quirihue
+23315001,Albury
+23320001,Tavistock
+23325001,Gretna
+23330001,Porpetto
+23335001,Drogenbos
+23340001,Sint-Kruis
+23345001,Blue Mountains
+23350001,Buccheri
+23355001,Getafe
+23360001,Mjölby
+23365001,Bhusawal
+23370001,Runcorn
+23375001,Rudiano
+23380001,Calvi Risorta
+23385001,Hilversum
+23390001,Siddi
+23395001,Stalhille
+23400001,Neuss
+23405001,Shaftesbury
+23410001,Udaipur
+23415001,Bielefeld
+23420001,Bally
+23425001,Rauco
+23430001,Coventry
+23435001,Rimouski
+23440001,Vespolate
+23445001,Orhangazi
+23450001,Kolhapur
+23455001,Petrópolis
+23460001,Heusden-Zolder
+23465001,Freirina
+23470001,Lota
+23475001,Tongerlo
+23480001,Hafizabad
+23485001,Bernburg
+23490001,Strasbourg
+23495001,Ercilla
+23500001,Ripacandida
+23505001,Little Rock
+23510001,Mold
+23515001,Frankfurt
+23520001,Münster
+23525001,Armento
+23530001,Kieldrecht
+23535001,Montjovet
+23540001,North Berwick
+23545001,Lalbahadur Nagar
+23550001,Winnipeg
+23555001,Roma
+23560001,Gerpinnes
+23565001,Chañaral
+23570001,Sivry
+23575001,Cittanova
+23580001,Sudbury
+23585001,Tamworth
+23590001,Altamura
+23595001,Canning
+23600001,Forfar
+23605001,Cochin
+23610001,Freux
+23615001,Bevilacqua
+23620001,Los Vilos
+23625001,Naihati
+23630001,Rapone
+23635001,Parbhani
+23640001,Rathenow
+23645001,Gaggio Montano
+23650001,Dolcedo
+23655001,Nadiad
+23660001,Santa Maria
+23665001,Sheffield
+23670001,Cuddapah
+23675001,Zele
+23680001,Hamilton
+23685001,New Westminster
+23690001,Villers-Poterie
+23695001,Vihari
+23700001,Bidar
+23705001,La Magdeleine
+23710001,Milnathort
+23715001,Bhubaneswar
+23720001,Vliermaalroot
+23725001,Tavigny
+23730001,FlŽnu
+23735001,Malgesso
+23740001,Kolkata
+23745001,San Sostene
+23750001,Mesa
+23755001,Crieff
+23760001,Wakefield
+23765001,Carluke
+23770001,B.S.D.
+23775001,Augsburg
+23780001,Hamme
+23785001,Curanilahue
+23790001,Vaux-sous-ChŽvremont
+23795001,Northampton
+23800001,Akhisar
+23805001,Multan
+23810001,Garaguso
+23815001,Mildura
+23820001,Hattersheim am Main
+23825001,Brandenburg
+23830001,Meeffe
+23835001,Naperville
+23840001,Klabbeek
+23845001,Haverfordwest
+23850001,Jabalpur
+23855001,Rimbey
+23860001,Gurgaon
+23865001,Helkijn
+23870001,Genova
+23875001,Couillet
+23880001,Modena
+23885001,Darion
+23890001,Billings
+23895001,Loreto
+23900001,Couthuin
+23905001,Spermalie
+23910001,Gorinchem
+23915001,Chartres
+23920001,Codó
+23925001,Premeno
+23930001,Breda
+23935001,Melipilla
+23940001,Mol
+23945001,Leval-Chaudeville
+23950001,Lancaster
+23955001,Quickborn
+23960001,Jennersdorf
+23965001,Paredones
+23970001,Chesapeake
+23975001,Treguaco
+23980001,Ulhasnagar
+23985001,Governador Valadares
+23990001,Bayswater
+23995001,Ofena
+24000001,San Pancrazio Salentino
+24005001,Bouge
+24010001,Olivola
+24015001,Río Hurtado
+24020001,Eschwege
+24025001,Fermont
+24030001,Aklavik
+24035001,Herentals
+24040001,Caxias do Sul
+24045001,Llanwrtwd Wells
+24050001,Wakefield
+24055001,Bhatinda
+24060001,Basingstoke
+24065001,Dufftown
+24070001,Peterhead
+24075001,Burcht
+24080001,Liers
+24085001,Torres del Paine
+24090001,Falun
+24095001,Senneville
+24100001,Papasidero
+24105001,Aylesbury
+24110001,Pamplona
+24115001,Castri di Lecce
+24120001,Bhagalpur
+24125001,Grand-RosiŽre-Hottomont
+24130001,Montemesola
+24135001,Lennik
+24140001,Harlech
+24145001,Palakkad
+24150001,Paraíso
+24155001,Tourcoing
+24160001,Colorno
+24165001,Bridgeport
+24170001,Bulnes
+24175001,Castelmarte
+24180001,Galbiate
+24185001,Uitbergen
+24190001,Campofelice di Fitalia
+24195001,San Pablo
+24200001,Corbais
+24205001,Ockelbo
+24210001,Silius
+24215001,Harderwijk
+24220001,Arrone
+24225001,Travo
+24230001,Diksmuide
+24235001,Wierde
+24240001,La Serena
+24245001,Cannole
+24250001,Völkermarkt
+24255001,Pomarico
+24260001,Germersheim
+24265001,Wambeek
+24270001,Dreux
+24275001,Raj Nandgaon
+24280001,Erciş
+24285001,Wetaskiwin
+24290001,Ciplet
+24295001,Celle
+24300001,Berg
+24305001,Eschwege
+24310001,Blieskastel
+24315001,Sant'Agata Bolognese
+24320001,Valladolid
+24325001,Linlithgow
+24330001,Wollongong
+24335001,Ludhiana
+24340001,Ichtegem
+24345001,Vedrin
+24350001,Puente Alto
+24355001,Goulburn
+24360001,Pievepelago
+24365001,Bayonne
+24370001,Barahanagar
+24375001,Drayton Valley
+24380001,Rock Springs
+24385001,Mannheim
+24390001,Mielec
+24395001,Honolulu
+24400001,Huara
+24405001,Gosnells
+24410001,Arica
+24415001,Bois-de-Villers
+24420001,Profondeville
+24425001,Tulsa
+24430001,Boulogne-Billancourt
+24435001,Chiari
+24440001,São João de Meriti
+24445001,Lutsel K'e
+24450001,Pellizzano
+24455001,Port Harcourt
+24460001,Gravataí
+24465001,Tarzo
+24470001,Tintigny
+24475001,Soma
+24480001,Barra do Corda
+24485001,St. Pölten
+24490001,Söke
+24495001,La Unión
+24500001,Gonda
+24505001,Cañas
+24510001,Bienne-lez-Happart
+24515001,Boignee
+24520001,Penna in Teverina
+24525001,Machalí
+24530001,Collecchio
+24535001,Blieskastel
+24540001,Lier
+24545001,Maubeuge
+24550001,Daussoulx
+24555001,Zerkegem
+24560001,Cap-Saint-Ignace
+24565001,Rekem
+24570001,Cellara
+24575001,Farciennes
+24580001,Aberystwyth
+24585001,Alto del Carmen
+24590001,Osorno
+24595001,Hallaar
+24600001,Castor
+24605001,Waidhofen an der Ybbs
+24610001,Stekene
+24615001,Newport
+24620001,LouveignŽ
+24625001,Bolsward
+24630001,Falciano del Massico
+24635001,Burlington
+24640001,Remscheid
+24645001,Ludvika
+24650001,Hoyerswerda
+24655001,Durgapur
+24660001,Fauvillers
+24665001,Mumbai
+24670001,Toledo
+24675001,Agen
+24680001,Denver
+24685001,Vicuña
+24690001,Marano Lagunare
+24695001,Ukkel
+24700001,Siculiana
+24705001,Belvedere Ostrense
+24710001,Mataró
+24715001,Imst
+24720001,Alajuelita
+24725001,Turgutlu
+24730001,Pagazzano
+24735001,Santomenna
+24740001,Mezzana
+24745001,Orilla
+24750001,Bungay
+24755001,Eernegem
+24760001,Salt Lake City
+24765001,Burns Lake
+24770001,Saint-Servais
+24775001,Lagundo/Algund
+24780001,Marentino
+24785001,Gonda
+24790001,San Benedetto del Tronto
+24795001,Monmouth
+24800001,Dollard-des-Ormeaux
+24805001,Cour-sur-Heure
+24810001,Morro d'Alba
+24815001,Mjölby
+24820001,La Serena
+24825001,Zeist
+24830001,Motta Sant'Anastasia
+24835001,Lompret
+24840001,Santa Croce sull'Arno
+24845001,Morvi
+24850001,Mercedes
+24855001,Lisciano Niccone
+24860001,San Benedetto del Tronto
+24865001,Pero
+24870001,Rajkot
+24875001,Clydebank
+24880001,Louisville
+24885001,Mostazal
+24890001,Heestert
+24895001,Pellizzano
+24900001,Linton
+24905001,Chantemelle
+24910001,Przemyśl
+24915001,Plauen
+24920001,Illkirch-Graffenstaden
+24925001,Buti
+24930001,Jemeppe-sur-Meuse
+24935001,Spruce Grove
+24940001,Sombreffe
+24945001,Junagadh
+24950001,Norfolk County
+24955001,Montefiore dell'Aso
+24960001,Erchie
+24965001,Brugge Bruges
+24970001,Ayr
+24975001,Castel del Giudice
+24980001,Penrith
+24985001,Salvador
+24990001,Conca Casale
+24995001,Sibret

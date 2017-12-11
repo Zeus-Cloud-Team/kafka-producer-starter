@@ -1,8 +1,10 @@
-package com.rbc.cloud.hackaton.kafka.producer.config;
+package com.rbc.cloud.hackathon.kafka.producer.config;
 
 
-import com.rbc.cloud.hackaton.kafka.producer.util.JavaVersion;
-import com.rbc.cloud.hackaton.kafka.producer.util.Util;
+import com.rbc.cloud.hackathon.data.Cities;
+import com.rbc.cloud.hackathon.kafka.producer.util.JavaVersion;
+import com.rbc.cloud.hackathon.kafka.producer.util.Util;
+import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -20,6 +22,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.Properties;
+
 
 @Configuration
 @PropertySource(value = "classpath:application.properties")
@@ -42,7 +45,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    Producer<String,String> producer() throws IOException {
+    Producer<String,Cities> citiesProducer() throws IOException {
         final Properties props = new Properties();
 
         if (exists("kafka.username") && exists("kafka.password")) {
@@ -96,14 +99,16 @@ public class KafkaProducerConfig {
 
         props.put("bootstrap.servers", env.getProperty("kafka.bootstrap.servers") );
         props.put("key.serializer", StringSerializer.class.getName() );
-        props.put("value.serializer", StringSerializer.class.getName() );
+        props.put("value.serializer", KafkaAvroSerializer.class.getName());
         props.put("sasl.jaas.config", env.getProperty("sasl.jaas.config") );
         props.put("sasl.mechanism", env.getProperty("sasl.mechanism") );
         props.put("security.protocol", env.getProperty("security.protocol") );
 
+        props.put("schema.registry.url", env.getProperty("schema.registry.url") );
+
         System.setProperty("java.security.auth.login.config",resourceLoader.getResource("file:/"+jaasFile).getURI().toString() );
 
-        return new KafkaProducer<String, String>(props);
+        return new KafkaProducer<>(props);
     }
 
 }

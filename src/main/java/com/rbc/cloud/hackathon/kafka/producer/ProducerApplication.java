@@ -1,4 +1,4 @@
-package com.rbc.cloud.hackaton.kafka.producer;
+package com.rbc.cloud.hackathon.kafka.producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

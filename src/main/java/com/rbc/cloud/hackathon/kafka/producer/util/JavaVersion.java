@@ -1,4 +1,4 @@
-package com.rbc.cloud.hackaton.kafka.producer.util;
+package com.rbc.cloud.hackathon.kafka.producer.util;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
