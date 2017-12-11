@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 @Component
@@ -32,13 +34,13 @@ public class KafkaCitiesProducer {
             @Override
             public void run() {
                 logger.info("opening {}", citiesFilePath);
-                File file = new File(getClass().getClassLoader().getResource(citiesFilePath).getFile());
+                InputStreamReader isr = new InputStreamReader(getClass().getClassLoader().getResourceAsStream(citiesFilePath));
+                BufferedReader br = new BufferedReader(isr);
+                String line=null;
                 try {
                     int i=0;
-                    Scanner scanner = new Scanner(file);
-                    while (scanner.hasNextLine()) {
+                    while ((line = br.readLine()) != null) {
                         i++;
-                        String line = scanner.nextLine();
                         try {
                             logger.info("processing cities line {} - {}", i, line);
                             String[] columns = line.split(",");
@@ -55,7 +57,7 @@ public class KafkaCitiesProducer {
                             e.printStackTrace();
                         }
                     }
-                    scanner.close();
+                    br.close();
                 }
                 catch (Exception e) {
                     logger.error("Error trying to read {} - error is {}, quitting", citiesFilePath, e.getMessage());

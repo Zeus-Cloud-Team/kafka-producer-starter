@@ -13,8 +13,10 @@ import org.springframework.stereotype.Component;
 import sun.java2d.loops.GraphicsPrimitive;
 
 import javax.annotation.PostConstruct;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -37,13 +39,13 @@ public class KafkaTransactionsProducer {
             @Override
             public void run() {
                 logger.info("opening {}", transactionsFilePath);
-                File custiesFile = new File(getClass().getClassLoader().getResource(transactionsFilePath).getFile());
+                InputStreamReader isr = new InputStreamReader(getClass().getClassLoader().getResourceAsStream(transactionsFilePath));
+                BufferedReader br = new BufferedReader(isr);
+                String line=null;
                 try {
                     int i=0;
-                    Scanner scanner = new Scanner(custiesFile);
-                    while (scanner.hasNextLine()) {
+                    while ((line = br.readLine()) != null) {
                         i++;
-                        String line = scanner.nextLine();
                         try {
                             logger.info("processing transactions line {} - {}", i, line);
                             String[] columns = line.split(",");
@@ -62,7 +64,7 @@ public class KafkaTransactionsProducer {
                             e.printStackTrace();
                         }
                     }
-                    scanner.close();
+                    br.close();
                 }
                 catch (Exception e) {
                     logger.error("Error trying to read {} - error is {}, quitting", transactionsFilePath, e.getMessage());

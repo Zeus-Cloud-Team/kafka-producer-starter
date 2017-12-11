@@ -11,8 +11,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -35,13 +37,14 @@ public class KafkaCustomersProducer {
             @Override
             public void run() {
                 logger.info("opening {}", customersFilePath);
-                File custiesFile = new File(getClass().getClassLoader().getResource(customersFilePath).getFile());
+                InputStreamReader isr = new InputStreamReader(getClass().getClassLoader().getResourceAsStream(customersFilePath));
+                BufferedReader br = new BufferedReader(isr);
+
                 try {
                     int i=0;
-                    Scanner scanner = new Scanner(custiesFile);
-                    while (scanner.hasNextLine()) {
+                    String line=null;
+                    while ((line = br.readLine()) != null) {
                         i++;
-                        String line = scanner.nextLine();
                         try {
                             logger.info("processing customers line {} - {}", i, line);
                             String[] columns = line.split(",");
@@ -59,12 +62,14 @@ public class KafkaCustomersProducer {
                             logger.error("Error trying to process line {} - {}, error is {}",i,line,e.getMessage());
                             e.printStackTrace();
                         }
+
                     }
-                    scanner.close();
+                    br.close();
                 }
                 catch (Exception e) {
                     logger.error("Error trying to read {} - error is {}, quitting", customersFilePath, e.getMessage());
                 }
+
             }
         });
 
