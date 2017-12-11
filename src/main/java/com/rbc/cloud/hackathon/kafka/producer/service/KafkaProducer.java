@@ -30,35 +30,42 @@ public class KafkaProducer {
 
     @PostConstruct
     private void publish() throws InterruptedException {
-        logger.info("opening {}", citiesFilePath);
-        File file = new File(getClass().getClassLoader().getResource(citiesFilePath).getFile());
-        try {
-            int i=0;
-            Scanner scanner = new Scanner(file);
-            while (scanner.hasNextLine()) {
-                i++;
-                String line = scanner.nextLine();
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                logger.info("opening {}", citiesFilePath);
+                File file = new File(getClass().getClassLoader().getResource(citiesFilePath).getFile());
                 try {
-                    logger.info("processing line {} - {}", i, line);
-                    String[] columns = line.split(",");
-                    Cities cities = new Cities();
-                    cities.setCityId(columns[0]);
-                    cities.setCityName(columns[1]);
-                    ProducerRecord<String, Cities> producerRecord = new ProducerRecord<String, Cities>(topicName, cities.getCityId().toString(), cities);
-                    citiesProducer.send(producerRecord);
-                    logger.info("published line {}", i);
-                    Thread.sleep(500);
+                    int i=0;
+                    Scanner scanner = new Scanner(file);
+                    while (scanner.hasNextLine()) {
+                        i++;
+                        String line = scanner.nextLine();
+                        try {
+                            logger.info("processing cities line {} - {}", i, line);
+                            String[] columns = line.split(",");
+                            Cities cities = new Cities();
+                            cities.setCityId(columns[0]);
+                            cities.setCityName(columns[1]);
+                            ProducerRecord<String, Cities> producerRecord = new ProducerRecord<String, Cities>(topicName, cities.getCityId().toString(), cities);
+                            citiesProducer.send(producerRecord);
+                            logger.info("published cities line {}", i);
+                            Thread.sleep(500);
+                        }
+                        catch (Exception e) {
+                            logger.error("Error trying to process cities line {} - {}, error is {}",i,line,e.getMessage());
+                            e.printStackTrace();
+                        }
+                    }
+                    scanner.close();
                 }
                 catch (Exception e) {
-                    logger.error("Error trying to process line {} - {}, error is {}",i,line,e.getMessage());
-                    e.printStackTrace();
+                    logger.error("Error trying to read {} - error is {}, quitting", citiesFilePath, e.getMessage());
                 }
             }
-            scanner.close();
-        }
-        catch (Exception e) {
-            logger.error("Error trying to read {} - error is {}, quitting", citiesFilePath, e.getMessage());
-        }
+        });
+
+        t.start();
 
     }
 }

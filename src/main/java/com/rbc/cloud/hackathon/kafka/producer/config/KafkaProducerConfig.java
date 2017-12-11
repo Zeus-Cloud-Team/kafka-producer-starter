@@ -2,6 +2,7 @@ package com.rbc.cloud.hackathon.kafka.producer.config;
 
 
 import com.rbc.cloud.hackathon.data.Cities;
+import com.rbc.cloud.hackathon.data.Customers;
 import com.rbc.cloud.hackathon.kafka.producer.util.JavaVersion;
 import com.rbc.cloud.hackathon.kafka.producer.util.Util;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
@@ -44,8 +45,7 @@ public class KafkaProducerConfig {
         }
     }
 
-    @Bean
-    Producer<String,Cities> citiesProducer() throws IOException {
+    Properties properties() throws IOException {
         final Properties props = new Properties();
 
         if (exists("kafka.username") && exists("kafka.password")) {
@@ -108,7 +108,19 @@ public class KafkaProducerConfig {
 
         System.setProperty("java.security.auth.login.config",resourceLoader.getResource("file:/"+jaasFile).getURI().toString() );
 
-        return new KafkaProducer<>(props);
+        return props;
+    }
+
+    @Bean
+    Producer<String,Cities> citiesProducer() throws IOException {
+        Properties properties = properties();
+        return new KafkaProducer<>(properties);
+    }
+
+    @Bean
+    Producer<String,Customers> customersProducer() throws IOException {
+        Properties properties = properties();
+        return new KafkaProducer<>(properties);
     }
 
 }
