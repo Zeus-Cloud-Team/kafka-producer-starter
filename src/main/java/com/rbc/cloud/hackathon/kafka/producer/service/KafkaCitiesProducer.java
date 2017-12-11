@@ -11,13 +11,11 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
-import java.io.InputStream;
 import java.util.Scanner;
-import java.util.UUID;
 
 @Component
-public class KafkaProducer {
-    private Logger logger= LoggerFactory.getLogger(KafkaProducer.class);
+public class KafkaCitiesProducer {
+    private Logger logger= LoggerFactory.getLogger(KafkaCitiesProducer.class);
 
     @Autowired
     private Producer<String, Cities> citiesProducer;

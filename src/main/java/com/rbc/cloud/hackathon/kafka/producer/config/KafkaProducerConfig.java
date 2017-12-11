@@ -3,6 +3,7 @@ package com.rbc.cloud.hackathon.kafka.producer.config;
 
 import com.rbc.cloud.hackathon.data.Cities;
 import com.rbc.cloud.hackathon.data.Customers;
+import com.rbc.cloud.hackathon.data.Transactions;
 import com.rbc.cloud.hackathon.kafka.producer.util.JavaVersion;
 import com.rbc.cloud.hackathon.kafka.producer.util.Util;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
@@ -119,6 +120,12 @@ public class KafkaProducerConfig {
 
     @Bean
     Producer<String,Customers> customersProducer() throws IOException {
+        Properties properties = properties();
+        return new KafkaProducer<>(properties);
+    }
+
+    @Bean
+    Producer<String,Transactions> transactionsProducer() throws IOException {
         Properties properties = properties();
         return new KafkaProducer<>(properties);
     }
