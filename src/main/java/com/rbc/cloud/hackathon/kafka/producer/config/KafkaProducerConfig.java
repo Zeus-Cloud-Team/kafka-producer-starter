@@ -104,7 +104,10 @@ public class KafkaProducerConfig {
         props.put("sasl.jaas.config", env.getProperty("sasl.jaas.config") );
         props.put("sasl.mechanism", env.getProperty("sasl.mechanism") );
         props.put("security.protocol", env.getProperty("security.protocol") );
-
+        props.put("interceptor.classes", env.getProperty("interceptor.classes"));
+        props.put("confluent.monitoring.interceptor.sasl.jaas.config", env.getProperty("confluent.monitoring.interceptor.sasl.jaas.config"));
+        props.put("confluent.monitoring.interceptor.sasl.mechanism", env.getProperty("confluent.monitoring.interceptor.sasl.mechanism"));
+        props.put("confluent.monitoring.interceptor.security.protocol", env.getProperty("confluent.monitoring.interceptor.security.protocol"));
         props.put("schema.registry.url", env.getProperty("schema.registry.url") );
 
         System.setProperty("java.security.auth.login.config",resourceLoader.getResource("file:/"+jaasFile).getURI().toString() );
